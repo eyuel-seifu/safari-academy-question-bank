@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Academy | Grade 12 EUEE Question Bank & Portal</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@0.460.0"></script>
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        emerald: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            200: '#a7f3d0',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #0f172a;
+        }
+
+        /* Levitating Floating Liquid Glass Navbar */
+        .liquid-glass-header {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.03), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .liquid-glass-header.scrolled {
+            background: rgba(255, 255, 255, 0.78);
+            backdrop-filter: blur(24px) saturate(200%);
+            -webkit-backdrop-filter: blur(24px) saturate(200%);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            box-shadow: 0 20px 40px -10px rgba(16, 185, 129, 0.12), 0 0 20px rgba(16, 185, 129, 0.06);
+            transform: translateX(-50%) translateY(2px) scale(0.99);
+        }
+
+        /* Minimal White Cards with Emerald Accents */
+        .minimal-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.02);
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .minimal-card:hover {
+            border-color: rgba(16, 185, 129, 0.4);
+            box-shadow: 0 12px 30px -10px rgba(16, 185, 129, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .emerald-gradient-text {
+            background: linear-gradient(135deg, #059669 0%, #10b981 50%, #047857 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f8fafc;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+            .sa-fade{position:absolute;inset:0;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-mask-image:linear-gradient(to bottom,transparent 12%,#000 60%);mask-image:linear-gradient(to bottom,transparent 12%,#000 60%);background:linear-gradient(to bottom,transparent 12%,rgba(244,247,245,.75))}
+        .sa-hero{background:radial-gradient(120% 90% at 50% 0%,#1c7a5a 0%,#0b3d2e 55%,#06261c 100%)}
+        .sa-ring{position:absolute;left:50%;top:44%;border:1.5px solid rgba(252,211,77,.28);border-radius:50%;transform:translate(-50%,-50%)}
+        .r1{width:260px;height:260px}.r2{width:460px;height:460px;border-color:rgba(252,211,77,.18)}.r3{width:700px;height:700px;border-color:rgba(252,211,77,.1)}
+        .sa-20{font-size:clamp(7rem,26vw,15rem);line-height:.9;font-weight:900;letter-spacing:-.05em;background:linear-gradient(180deg,#fff2b3 0%,#f5b83a 55%,#b87a12 100%);-webkit-background-clip:text;background-clip:text;color:transparent;animation:sa-rise 1.1s cubic-bezier(.2,.8,.2,1) both}
+        @keyframes sa-rise{from{opacity:0;transform:translateY(40px) scale(.92)}to{opacity:1;transform:none}}
+        .sa-line{border-left:2px solid #f5b83a;margin-left:8px}.sa-node{position:relative;padding:0 0 28px 28px}
+        .sa-dot{position:absolute;left:-9px;top:4px;width:16px;height:16px;border-radius:50%;background:#10b981;border:3px solid #fff;box-shadow:0 0 0 2px #f5b83a}
+        @media(prefers-reduced-motion:reduce){.sa-20{animation:none}}
+        html.dark body{background:#0b1210;color:#e6efe9}
+        html.dark .liquid-glass-header{background:rgba(15,25,21,.85);border-color:rgba(52,211,153,.18)}
+        html.dark .liquid-glass-header.scrolled{background:rgba(15,25,21,.8)}
+        html.dark .minimal-card,html.dark .bg-white{background:#131d19!important;border-color:#233630}
+        html.dark footer{background:#0f1814!important;border-color:#233630!important}
+        html.dark .bg-slate-50,html.dark .bg-slate-100{background:#1a2822!important}
+        html.dark .hover\:bg-slate-50:hover,html.dark .hover\:bg-slate-200:hover{background:#22332c!important}
+        html.dark .bg-emerald-50,html.dark .bg-emerald-100{background:#10291f!important}
+        html.dark .bg-amber-50{background:#2b2410!important}
+        html.dark .text-slate-900,html.dark .text-slate-800{color:#f1f7f3!important}
+        html.dark .text-slate-700,html.dark .text-slate-600{color:#c2d0c8!important}
+        html.dark .text-slate-500,html.dark .text-slate-400{color:#8fa399!important}
+        html.dark .text-emerald-800,html.dark .text-emerald-700{color:#6ee7b7!important}
+        html.dark .border-slate-100,html.dark .border-slate-200,html.dark .border-emerald-100,html.dark .border-emerald-200{border-color:#233630!important}
+        html.dark input,html.dark textarea,html.dark select{background:#0f1814!important;color:#e6efe9!important;border-color:#2c433a!important}
+        html.dark ::-webkit-scrollbar-track{background:#0b1210}html.dark ::-webkit-scrollbar-thumb{background:#2c433a}
+        html.dark .sa-fade{background:linear-gradient(to bottom,transparent 12%,rgba(11,18,16,.8))}
+        html.dark .sa-dot{border-color:#0b1210}
+        html.dark .opt-sel{color:#fff}
+    </style>
+<script>try{var t=localStorage.getItem('sa_theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}</script>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-emerald-500 selection:text-white pt-28">
+
+    <!-- Notification Toast Container -->
+    <div id="toast-container" class="fixed bottom-6 right-6 z-50 flex flex-col gap-3"></div>
+
+    <!-- Levitating Dynamic Liquid-Glass Floating Header -->
+    <header id="navbar" class="fixed top-4 left-1/2 -translate-x-1/2 z-40 w-[92%] max-w-6xl rounded-2xl liquid-glass-header">
+        <div class="px-5 sm:px-8 h-16 flex items-center justify-between">
+            
+            <!-- School Brand & Logo -->
+             <div class="flex items-center space-x-3 cursor-pointer" onclick="router.navigate('home')">
+                <!-- Removed gradient, shadow, and border, keeping only size and rounding -->
+                <div class="w-10 h-10 rounded-xl overflow-hidden flex items-center justify-center">
+                <img src="Photos/Logo.jpg" alt="Logo" class="w-full h-full object-cover">
+            </div>
+            <div>
+                <div class="flex items-center space-x-2">
+                    <span class="font-bold text-slate-900 text-base sm:text-lg tracking-tight">Safari Academy</span>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-bold border border-emerald-200">Grade 12 EUEE</span>
+            </div>
+        <p class="text-[11px] text-slate-500 font-medium hidden sm:block">ልጆቻችሁ ልጆቻችን ናቸው! • Your Kids Our Kids</p>
+    </div>
+</div>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm font-medium">
+                <button onclick="router.navigate('home')" class="px-3 py-2 rounded-xl text-slate-600 hover:text-emerald-600 hover:bg-emerald-50/80 transition">Home</button>
+                <button onclick="router.navigate('question-bank')" class="px-3 py-2 rounded-xl text-slate-600 hover:text-emerald-600 hover:bg-emerald-50/80 transition flex items-center space-x-1">
+                    <i data-lucide="book-open" class="w-4 h-4 text-emerald-600"></i>
+                    <span>Question Bank</span>
+                </button>
+                <button onclick="router.navigate('quizzes')" class="px-3 py-2 rounded-xl text-slate-600 hover:text-emerald-600 hover:bg-emerald-50/80 transition flex items-center space-x-1">
+                    <i data-lucide="award" class="w-4 h-4 text-emerald-600"></i>
+                    <span>Mock Exams</span>
+                </button>
+                <button onclick="router.navigate('anniversary')" class="px-3 py-2 rounded-xl text-amber-700 font-bold hover:bg-amber-50 transition flex items-center space-x-1"><i data-lucide="sparkles" class="w-4 h-4 text-amber-500"></i><span>20 Years</span></button>
+                <button onclick="router.navigate('feedback')" class="px-3 py-2 rounded-xl text-slate-600 hover:text-emerald-600 hover:bg-emerald-50/80 transition flex items-center space-x-1">
+                    <i data-lucide="message-square" class="w-4 h-4 text-emerald-600"></i>
+                    <span>Feedback</span>
+                </button>
+                
+                <!-- Portal Switchers based on login -->
+                <button class="theme-btn p-2 mr-1 rounded-xl bg-slate-100 text-slate-700 hover:text-emerald-600 transition" onclick="toggleTheme()" aria-label="Toggle dark mode"></button>
+                <div id="portal-links-container" class="flex items-center space-x-1">
+                    <!-- Injected dynamically -->
+                </div>
+
+                <div id="nav-auth-container" class="flex items-center space-x-2 ml-3 pl-3 border-l border-slate-200">
+                    <!-- Auth injected here -->
+                </div>
+            </nav>
+
+            <!-- Mobile Toggle -->
+            <div class="flex md:hidden items-center space-x-2">
+                <button class="theme-btn p-2 rounded-xl bg-slate-100 text-slate-700 hover:text-emerald-600 transition" onclick="toggleTheme()" aria-label="Toggle dark mode"></button><div id="mobile-nav-auth"></div>
+                <button onclick="toggleMobileMenu()" class="p-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 transition">
+                    <i data-lucide="menu" class="w-5 h-5"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-5 pt-2 pb-4 border-t border-slate-100 space-y-2 bg-white/95 backdrop-blur-md rounded-b-2xl">
+            <button onclick="router.navigate('home'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-xl text-slate-700 hover:bg-emerald-50 font-medium">Home</button>
+            <button onclick="router.navigate('question-bank'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-xl text-slate-700 hover:bg-emerald-50 font-medium">Question Bank</button>
+            <button onclick="router.navigate('quizzes'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-xl text-slate-700 hover:bg-emerald-50 font-medium">Mock Exams</button>
+            <button onclick="router.navigate('student-portal'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-xl text-slate-700 hover:bg-emerald-50 font-medium">Student Portal</button>
+             <button onclick="router.navigate('anniversary'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-xl text-amber-700 bg-amber-50 font-bold">20th Anniversary</button>
+            <button onclick="router.navigate('feedback'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-xl text-slate-700 hover:bg-emerald-50 font-medium">Feedback & Support</button>
+        </div>
+    </header>
+
+    <!-- App Main Container -->
+    <main id="app-container" class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <!-- Views rendered here -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 text-slate-600 py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="w-9 h-9 rounded-xl bg-emerald-600 flex items-center justify-center text-white font-bold">SA</div>
+                    <span class="text-slate-900 font-bold text-base">Safari Academy Question Bank</span>
+                </div>
+                <p class="text-xs text-slate-500 leading-relaxed mb-3">
+                    "Your Kids Our Kids" • "ልጆቻችሁ ልጆቻችን ናቸው!". Official Grade 12 EUEE Exam Preparation portal strictly verified for Safari Academy students and faculty.
+                </p>
+                <div class="inline-flex items-center space-x-2 text-xs text-emerald-800 font-medium bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
+                    <i data-lucide="code" class="w-3.5 h-3.5 text-emerald-600"></i>
+                    <span>Built & Maintained by Eyuel Seifu (Grade 11DpN)</span>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-slate-900 font-semibold text-xs uppercase tracking-wider mb-3">Grade 12 EUEE Subjects</h4>
+                <ul class="space-y-2 text-xs text-slate-600">
+                    <li><button onclick="router.navigate('question-bank', {subject: 'Physics'})" class="hover:text-emerald-600 transition">Grade 12 Physics (Kinematics, Electromagnetism)</button></li>
+                    <li><button onclick="router.navigate('question-bank', {subject: 'Mathematics'})" class="hover:text-emerald-600 transition">Grade 12 Mathematics (Calculus, Complex Numbers)</button></li>
+                    <li><button onclick="router.navigate('question-bank', {subject: 'Chemistry'})" class="hover:text-emerald-600 transition">Grade 12 Chemistry (Reaction Kinetics, Organic)</button></li>
+                    <li><button onclick="router.navigate('question-bank', {subject: 'Biology'})" class="hover:text-emerald-600 transition">Grade 12 Biology (Genetics & Molecular Biology)</button></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-slate-900 font-semibold text-xs uppercase tracking-wider mb-3">Practice</h4>
+                <div class="flex flex-col space-y-2 text-xs">
+                    <button onclick="router.navigate('quizzes')" class="text-left text-slate-600 hover:text-emerald-600 transition">Practice with the monthly passcode</button>
+                </div>
+                <p class="text-[11px] text-slate-400 mt-4">© 2026 Safari Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+/* ===== CONFIG: edit before deploying (visible in page source; fine for a school demo) ===== */
+// Passwords are stored as salted PBKDF2 hashes, never as plain text. Make one with:  node make-hash.js "new passcode"
+const ADMIN_HASH = 'aa65f8668f21188b4d032caf50cd6999:3c20cf1da0f96db3de9f14ec3dfb4cf27f9794cee47d07c3858a0ed1e80fec30';
+const MONTH_CODES = { '2026-11': 'dd0b796516b7d6d2032a7c7136b308ef:51b4003686134abe48a33b407df7608b04adc69437926ec38dff2e5923d50937', 
+'2026-12': '86e6aaee21c12b3f8043016fd27ce326:001bd8c87991614e0c849262ff3bd065b2f77fd25f44bacec481d620bbfb44ab'}; // YYYY-MM : hash of that month's passcode
+const MAX_TRIES = 5, BAN_HOURS = 100, TOTAL = 600;
+/* ======================================================================================== */
+        const INITIAL_QUESTIONS = [
+            { id: 101, subject: 'Physics', stream: 'Natural Science', grade: 'Grade 12', topic: 'Kinematics & Vectors', question: 'A projectile is fired at an angle of 30° with an initial velocity of 40 m/s. What is its horizontal velocity component?', options: ['20 m/s', '34.6 m/s', '40 m/s', '10 m/s'], answer: 1, explanation: 'Using $v_x = v_0 \\cos(\\theta)$: $v_x = 40 \\times \\cos(30^\\circ) = 34.64\\text{ m/s}$.' },
+            { id: 102, subject: 'Physics', stream: 'Natural Science', grade: 'Grade 12', topic: 'Electromagnetism', question: 'What magnetic force is exerted on a 2-meter long wire carrying 5 amperes perpendicular to a uniform 0.4 Tesla magnetic field?', options: ['1.0 N', '2.0 N', '4.0 N', '0.4 N'], answer: 2, explanation: 'Using $F = I L B \\sin(90^\\circ) = 5 \\times 2 \\times 0.4 = 4.0\\text{ N}$.' },
+            { id: 103, subject: 'Mathematics', stream: 'Natural Science', grade: 'Grade 12', topic: 'Calculus (Derivatives)', question: 'What is the derivative of $f(x) = e^{2x} \\sin(x)$ with respect to $x$?', options: ['2 e^{2x} cos(x)', 'e^{2x} (2 sin(x) + cos(x))', 'e^{2x} (sin(x) + 2 cos(x))', '2 e^{2x} sin(x)'], answer: 1, explanation: 'By Product Rule: $f\'(x) = e^{2x}(2\\sin(x) + \\cos(x))$.' },
+            { id: 104, subject: 'Mathematics', stream: 'Natural Science', grade: 'Grade 12', topic: 'Sequences & Series', question: 'Find the 10th term of an arithmetic progression where $a_1 = 7$ and common difference $d = 4$.', options: ['43', '47', '39', '51'], answer: 0, explanation: 'Using $a_n = a_1 + (n-1)d$: $a_{10} = 7 + (9)(4) = 43$.' },
+            { id: 105, subject: 'Chemistry', stream: 'Natural Science', grade: 'Grade 12', topic: 'Chemical Kinetics', question: 'If doubling the concentration of reactant A quadruples the rate of reaction, what is the order of reaction with respect to A?', options: ['First order', 'Second order', 'Zero order', 'Third order'], answer: 1, explanation: 'Since Rate $\\propto [A]^n$, $2^n = 4 \\implies n = 2$ (Second Order).' },
+            { id: 106, subject: 'Biology', stream: 'Natural Science', grade: 'Grade 12', topic: 'Genetics & Molecular Biology', question: 'During protein synthesis, which organelle translates messenger RNA (mRNA) into amino acid chains?', options: ['Mitochondrion', 'Ribosome', 'Golgi Apparatus', 'Lysosome'], answer: 1, explanation: 'Ribosomes read mRNA codons and synthesize polypeptide chains.' },
+            { id: 107, subject: 'English', stream: 'Both', grade: 'Grade 12', topic: 'Conditional Grammar', question: 'Choose the correct form: "If the supervisor ______ the roster earlier, Eyuel would have received his login token."', options: ['checked', 'had checked', 'has checked', 'will check'], answer: 1, explanation: 'Third conditional sentence requiring past perfect ("had checked").' }
+        ];
+const STREAMS={Natural:['Mathematics','Aptitude','English','Biology','Physics','Chemistry'],Social:['English','Aptitude','Geography','History','Economics','Mathematics']};
+const STREAM_LABEL={Natural:'Natural Science',Social:'Social Science'};
+const normStream=v=>/natural/i.test(v)?'Natural':/social/i.test(v)?'Social':'Both';
+const curStream=()=>{const x=get('sa_stream');return STREAMS[x]?x:null};
+const inStream=q=>{const st=sess()&&curStream();return !st||(STREAMS[st].includes(q.subject)&&(q.stream==='Both'||q.stream===st))};
+const visible=()=>appState.questions.filter(inStream);
+async function check(pw,stored){try{const[sh,hh]=String(stored||'').split(':');if(!sh||!hh||!crypto.subtle)return false;
+ const k=await crypto.subtle.importKey('raw',new TextEncoder().encode(pw),'PBKDF2',false,['deriveBits']);
+ const bits=new Uint8Array(await crypto.subtle.deriveBits({name:'PBKDF2',salt:Uint8Array.from(sh.match(/../g).map(x=>parseInt(x,16))),iterations:150000,hash:'SHA-256'},k,256));
+ const got=[...bits].map(x=>x.toString(16).padStart(2,'0')).join('');let d=got.length^hh.length;for(let i=0;i<got.length;i++)d|=got.charCodeAt(i)^hh.charCodeAt(i);return d===0}catch{return false}}
+const sane=a=>(Array.isArray(a)?a:[]).filter(q=>q&&typeof q.question==='string'&&typeof q.subject==='string'&&typeof q.topic==='string'&&Array.isArray(q.options)&&q.options.length===4&&q.options.every(o=>typeof o==='string')&&Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4).map(q=>({id:q.id??Date.now()+Math.random(),subject:q.subject.slice(0,60),year:Number.isInteger(+q.year)&&+q.year>=1990&&+q.year<=2100?+q.year:'',stream:normStream(q.stream),grade:'Grade 12',topic:q.topic.slice(0,80),question:q.question.slice(0,1000),options:q.options.map(o=>o.slice(0,300)),answer:q.answer,explanation:String(q.explanation||'').slice(0,1500)}));
+const B='px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition disabled:opacity-40';
+const B2='px-5 py-3 rounded-xl bg-white hover:bg-slate-50 text-slate-800 font-bold text-sm border border-slate-200 transition disabled:opacity-40';
+const BR='px-4 py-2 rounded-xl bg-rose-600 text-white font-bold text-xs';
+const IN='w-full px-4 py-3 rounded-xl border border-slate-200 text-sm mb-3 bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500';
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const clean=s=>esc(String(s||'').replace(/\$/g,'').replace(/\\+(text|cos|sin|times|circ|theta)/g,(m,w)=>({times:'×',circ:'°',theta:'θ'}[w]??(w==='text'?'':w))).replace(/\^°/g,'°').replace(/[{}]/g,''));
+const get=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}},put=(k,v)=>localStorage.setItem(k,JSON.stringify(v));
+const month=()=>new Date().toISOString().slice(0,7);
+let settings={secPerQ:90}, appState={questions:INITIAL_QUESTIONS.slice()}, ex=null, tick=null, taps=[], edit=null;
+const subjects=()=>{const o=STREAMS[sess()&&curStream()]||[];return [...new Set(visible().map(q=>q.subject))].sort((a,b)=>(o.indexOf(a)+1||99)-(o.indexOf(b)+1||99)||a.localeCompare(b))};
+const allSubjects=()=>[...new Set([...STREAMS.Natural,...STREAMS.Social,...appState.questions.map(q=>q.subject)])];
+const saveDB=()=>put('sa_db',{settings,questions:appState.questions});
+async function loadDB(){const l=get('sa_db');if(l){settings=l.settings||settings;appState.questions=sane(l.questions);return}
+ try{const d=await (await fetch('questions.json',{cache:'no-cache'})).json();if(d.questions?.length){settings={secPerQ:Math.max(10,+d.settings?.secPerQ||90)};appState.questions=sane(d.questions)}}catch{}}
+function showToast(m,t='info'){const c=document.getElementById('toast-container'),e=document.createElement('div');
+ e.className='px-5 py-3 rounded-2xl shadow-xl text-sm font-semibold text-white '+(t==='error'?'bg-rose-600':t==='success'?'bg-emerald-600':'bg-slate-900');e.textContent=m;c.appendChild(e);setTimeout(()=>e.remove(),4000)}
+function setThemeIcons(){const d=document.documentElement.classList.contains('dark');document.querySelectorAll('.theme-btn').forEach(b=>b.innerHTML=`<i data-lucide="${d?'sun':'moon'}" class="w-5 h-5"></i>`);lucide.createIcons()}
+function toggleTheme(){const d=document.documentElement.classList.toggle('dark');try{localStorage.setItem('sa_theme',d?'dark':'light')}catch{}setThemeIcons()}
+function toggleMobileMenu(){document.getElementById('mobile-menu').classList.toggle('hidden')}
+/* ---- bans ---- */
+const banLeft=r=>Math.max(0,get('sa_ban_'+r,0)-Date.now());
+function fail(r){const n=get('sa_f_'+r,0)+1;put('sa_f_'+r,n);if(n>=MAX_TRIES){put('sa_ban_'+r,Date.now()+BAN_HOURS*36e5);put('sa_f_'+r,0);return 0}return MAX_TRIES-n}
+const banMsg=r=>`Too many wrong attempts. Access is blocked for about ${Math.ceil(banLeft(r)/36e5)} more hour(s). Ask the school office for help.`;
+/* ---- secret admin: Ctrl/Cmd + Shift + A, three times ---- */
+addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.shiftKey&&e.key.toLowerCase()==='a'){e.preventDefault();const t=Date.now();taps=taps.filter(x=>t-x<1500);taps.push(t);if(taps.length>=3){taps=[];router.navigate('admin')}}});
+/* ---- access ---- */
+const sess=()=>{const s=get('sa_sess');return s&&s.code&&s.code===MONTH_CODES[month()]?s:null}; // stays unlocked until the school changes the passcode
+function gateCard(){const bl=banLeft('stu');
+ return `<div class="minimal-card p-6 rounded-3xl bg-white shadow-2xl border border-emerald-100 max-w-md w-full mx-auto text-left">
+ <div class="flex items-center space-x-2 mb-1"><i data-lucide="lock" class="w-5 h-5 text-emerald-600"></i><h3 class="text-lg font-black text-slate-900">Enter the monthly passcode</h3></div>
+ <p class="text-xs text-slate-500 mb-4">Enter it once. You will not be asked again until the school changes the passcode.</p>
+ ${bl?`<p class="text-sm text-rose-600 font-semibold">${banMsg('stu')}</p>`:`<input id="g-n" class="${IN}" placeholder="Full name" autocomplete="name"><input id="g-p" type="password" class="${IN}" placeholder="Passcode" autocomplete="off"><p id="g-e" class="text-xs text-rose-600 min-h-4 mb-2"></p><button class="${B} w-full" onclick="unlock()">Unlock</button>`}</div>`}
+async function unlock(){const n=document.getElementById('g-n').value.trim(),p=document.getElementById('g-p').value.trim(),er=document.getElementById('g-e');
+ if(n.length<3){er.textContent='Enter your full name.';return}
+ if(MONTH_CODES[month()]&&await check(p,MONTH_CODES[month()])){put('sa_f_stu',0);put('sa_sess',{name:n.slice(0,60),code:MONTH_CODES[month()]});showToast('Unlocked. Good luck!','success');renderApp()}
+ else{const l=fail('stu');er.textContent=l?`Wrong passcode. ${l} attempt(s) left.`:banMsg('stu');if(!l)renderApp()}}
+function lock(){localStorage.removeItem('sa_sess');localStorage.removeItem('sa_stream');router.navigate('home')}
+function updateNavAuth(){const s=sess(),h=s?`<span class="text-xs font-bold text-emerald-700">${esc(s.name.split(' ')[0])}</span><button onclick="lock()" class="px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 hover:bg-slate-200">Lock</button>`:`<button onclick="router.navigate('quizzes')" class="px-4 py-2 rounded-xl text-xs font-semibold bg-emerald-600 hover:bg-emerald-500 text-white">Enter passcode</button>`;
+ for(const id of ['nav-auth-container','mobile-nav-auth']){const e=document.getElementById(id);if(e)e.innerHTML=h}
+ const p=document.getElementById('portal-links-container');if(p)p.innerHTML=''}
+const router={currentRoute:'home',navigate(r,p={}){if(ex?.live&&r!=='quizzes'){if(!confirm('Leave the exam? Your progress will be lost.'))return;ex=null;clearInterval(tick)}this.currentRoute=r;scrollTo({top:0});renderApp(p);updateNavAuth()}};
+let lastP={},selYear=null,afterStream=null;const years=()=>[...new Set(visible().map(q=>q.year).filter(Boolean))].sort((a,b)=>b-a);function setYear(y){selYear=y;renderApp()}addEventListener('beforeunload',e=>{if(ex?.live){e.preventDefault();e.returnValue=''}});
+function renderApp(p){if(p)lastP=p;if(!ex?.live)clearInterval(tick);const r=router.currentRoute;if(r==='student-portal')router.currentRoute='quizzes';if(sess()&&!curStream()&&['quizzes','question-bank'].includes(router.currentRoute)){afterStream=router.currentRoute;router.currentRoute='stream'}
+ const R=router.currentRoute,v={home:()=>renderHomeView(),'question-bank':()=>renderQB(lastP.subject),quizzes:renderPractice,stream:renderStream,anniversary:renderAnniversary,feedback:renderFeedback,admin:renderAdmin}[R]||renderHomeView;
+ document.getElementById('app-container').innerHTML=v();lucide.createIcons();if(R==='quizzes'&&ex&&ex.live)ex.phase==='break'?paintBreak():paintExam()}
+        function renderHomeView() {
+            return `
+                <section class="py-12 sm:py-20 text-center max-w-4xl mx-auto">
+                    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold mb-6">
+                        <i data-lucide="shield-check" class="w-4 h-4 text-emerald-600"></i>
+                        <span>Safari Academy Official Grade 12 EUEE Revision Hub</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-6">
+                        Excellence in <span class="emerald-gradient-text">Grade 12 Revision</span> for National Success.
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto mb-10">
+                        Practice EUEE curriculum questions by subject, take timed quizzes with instant score breakdown, and connect with teacher-verified roster accounts.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <button onclick="router.navigate('question-bank')" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-xl shadow-emerald-600/25 transition transform hover:-translate-y-0.5">
+                            Browse Question Bank
+                        </button>
+                        <button onclick="router.navigate('student-portal')" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-white hover:bg-slate-50 text-slate-800 font-bold text-sm border border-slate-200 shadow-sm transition">
+                            Student & Faculty Portal
+                        </button>
+                    </div>
+
+                    <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 text-left">
+                        <div class="minimal-card p-5 rounded-2xl">
+                            <div class="text-2xl font-black text-emerald-600 mb-1">${appState.questions.length}+</div>
+                            <div class="text-xs font-bold text-slate-700">Curriculum Questions</div>
+                            <div class="text-[10px] text-slate-400 mt-0.5">EUEE Standards</div>
+                        </div>
+                        <div class="minimal-card p-5 rounded-2xl">
+                            <div class="text-2xl font-black text-slate-900 mb-1">Out of 600</div>
+                            <div class="text-xs font-bold text-slate-700">Full Exam Scoring</div>
+                            <div class="text-[10px] text-slate-400 mt-0.5">All subjects, timed</div>
+                        </div>
+                        <div class="minimal-card p-5 rounded-2xl">
+                            <div class="text-2xl font-black text-emerald-600 mb-1">Monthly Passcode</div>
+                            <div class="text-xs font-bold text-slate-700">Safari Academy Students</div>
+                            <div class="text-[10px] text-slate-400 mt-0.5">Enter it once</div>
+                        </div>
+                        <div class="minimal-card p-5 rounded-2xl">
+                            <div class="text-2xl font-black text-slate-900 mb-1">Free & Open</div>
+                            <div class="text-xs font-bold text-slate-700">Open Source Project</div>
+                            <div class="text-[10px] text-slate-400 mt-0.5">Made for our school</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="max-w-4xl mx-auto -mt-4 mb-20 grid md:grid-cols-2 gap-8 items-start">
+                    <div>
+                        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 mb-3">Why we built this</h2>
+                        <p class="text-slate-600 leading-relaxed">Good practice questions are hard to find, and they are not always organized the way our curriculum is. Many students revise without feedback and never learn which topics are holding them back.</p>
+                    </div>
+                    <div>
+                        <p class="text-slate-600 leading-relaxed mb-3">The Safari Academy Question Bank is a school-owned place to practice, free and open to every Grade 12 student, at any time, from a phone or a computer.</p>
+                        <p class="text-slate-600 leading-relaxed">Questions are written and checked together with our teachers, so what you practice matches what you are taught.</p>
+                    </div>
+                </section>
+
+                <section class="max-w-5xl mx-auto mb-20">
+                    <h2 class="text-2xl sm:text-3xl font-black text-slate-900 text-center mb-2">How it works</h2>
+                    <p class="text-center text-sm text-slate-500 mb-8">From first visit to your score in four steps.</p>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-left">
+                        ${[['Look around','Open the Question Bank and read the first questions for free.'],['Enter the passcode','Use this month\'s passcode from the school. You enter it once.'],['Take a timed exam','Choose a full exam or a single subject and answer against the clock.'],['Review and improve','See your score, the correct answers and the topics to revise, then try again.']].map((s,i)=>`<div class="minimal-card p-6 rounded-3xl"><div class="w-9 h-9 rounded-full bg-emerald-600 text-white font-black flex items-center justify-center mb-4">${i+1}</div><div class="font-bold text-slate-900 mb-1">${s[0]}</div><p class="text-sm text-slate-600">${s[1]}</p></div>`).join('')}
+                    </div>
+                </section>
+
+                <section class="max-w-5xl mx-auto mb-20">
+                    <h2 class="text-2xl sm:text-3xl font-black text-slate-900 text-center mb-8">What you get</h2>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-left">
+                        ${[['book-open','Organized question bank','Questions sorted by subject and topic, with the correct answer and an explanation.'],['timer','Real exam conditions','A countdown timer and automatic submission when time runs out, like the real day.'],['award','Full exam out of 600','Every subject in one sitting, scored out of 600 so you can see where you stand.'],['target','Single subject tests','Focus on one subject when you only have a short time to revise.'],['bar-chart-3','Topics to revise','After each test you see which topics were weak, so you know what to study next.'],['smartphone','Works on any phone','Light pages that use little data, so you can practice anywhere.']].map(f=>`<div class="minimal-card p-6 rounded-3xl"><div class="w-11 h-11 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4"><i data-lucide="${f[0]}" class="w-5 h-5"></i></div><div class="font-bold text-slate-900 mb-1">${f[1]}</div><p class="text-sm text-slate-600">${f[2]}</p></div>`).join('')}
+                    </div>
+                </section>
+
+                <section class="max-w-4xl mx-auto mb-20">
+                    <h2 class="text-2xl sm:text-3xl font-black text-slate-900 text-center mb-2">Subjects</h2>
+                    <p class="text-center text-sm text-slate-500 mb-6">Tap a subject to open its questions.</p>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        ${subjects().map((s,i)=>`<button onclick="router.navigate('question-bank',{subject:subjects()[${i}]})" class="px-5 py-3 rounded-2xl bg-white border border-slate-200 hover:border-emerald-500 text-sm font-bold text-slate-800 transition">${esc(s)} <span class="text-emerald-600 font-semibold">${appState.questions.filter(q=>q.subject===s).length}</span></button>`).join('')}
+                    </div>
+                    <div class="minimal-card rounded-3xl p-6 mt-8 text-left">
+                        <div class="font-bold text-slate-900 mb-1">How the 600 score works</div>
+                        <p class="text-sm text-slate-600">Every subject counts the same. We take your percentage in each subject, average them, and scale the result to 600. A single subject test is scored out of 100.</p>
+                    </div>
+                </section>
+
+                <section class="max-w-4xl mx-auto mb-20 grid md:grid-cols-2 gap-4 text-left">
+                    <div class="minimal-card p-6 rounded-3xl">
+                        <div class="font-bold text-slate-900 mb-2">For students</div>
+                        <p class="text-sm text-slate-600">Ask your school office for the monthly passcode. Enter it once and you can practice as often as you like until the school changes it.</p>
+                    </div>
+                    <div class="minimal-card p-6 rounded-3xl">
+                        <div class="font-bold text-slate-900 mb-2">For teachers</div>
+                        <p class="text-sm text-slate-600">Review questions for accuracy and curriculum match, tell us which topics students struggle with, and encourage your classes to try it. A short review of each question set is enough.</p>
+                    </div>
+                </section>
+
+                <section class="max-w-3xl mx-auto mb-20 text-left">
+                    <h2 class="text-2xl sm:text-3xl font-black text-slate-900 text-center mb-6">Common questions</h2>
+                    ${[['Do I need to create an account?','No. You only need your name and the monthly passcode from the school.'],['How often do I enter the passcode?','Once. The site remembers it on your device until the school changes the passcode.'],['Can I practice a specific year?','Yes. On the Mock Exams page choose an entrance exam year. If you do not choose one, you get a shuffled mix from every year.'],['Can I take a test more than once?','Yes. Retake any test as many times as you want. Questions are shuffled each time.'],['Where are my scores saved?','On your own device, so only you can see them on the scoreboard.'],['Is it free?','Yes. The project is free and open source, made for Safari Academy students.'],['What if I enter the wrong passcode?','You have five tries. After that the site blocks you for 24 hours, so check the code with the school office first.']].map(f=>`<details class="minimal-card rounded-2xl px-5 py-4 mb-3"><summary class="cursor-pointer font-bold text-slate-900 text-sm">${f[0]}</summary><p class="text-sm text-slate-600 mt-2">${f[1]}</p></details>`).join('')}
+                </section>
+
+                <section class="max-w-4xl mx-auto rounded-[2rem] sa-hero text-white text-center px-6 py-12 mb-6">
+                    <p class="text-amber-200 font-bold text-sm mb-1">Safari Academy turns 20</p>
+                    <h2 class="text-2xl sm:text-3xl font-black mb-3">Twenty years of your kids, our kids</h2>
+                    <p class="text-emerald-50 text-sm max-w-xl mx-auto mb-6">Read our story and leave a message for the school's 20th anniversary.</p>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <button onclick="router.navigate('anniversary')" class="px-6 py-3 rounded-2xl bg-amber-300 hover:bg-amber-200 text-emerald-950 font-black text-sm">See the 20th anniversary</button>
+                        <button onclick="router.navigate('quizzes')" class="px-6 py-3 rounded-2xl bg-white/10 border border-white/30 hover:bg-white/20 font-bold text-sm">Start practicing</button>
+                    </div>
+                </section>
+
+            `;
+        }
+/* ---- 20th anniversary page: edit the milestones below with real school history ---- */
+const ANNIV={founded:2006,now:2026,milestones:[
+ {y:2006,t:'Safari Academy opens its doors',d:'The first students, the first teachers, and a promise: your kids are our kids.'},
+ {y:2026,t:'Twenty years of Safari Academy',d:'Two decades of students who learned here and went on to build their futures.'},
+ {y:2026,t:'The Safari Academy Question Bank',d:'A free, school-owned revision site for Grade 12 ESSLCE students, built by a student for the whole school.'}]};
+function renderAnniversary(){const w=get('sa_wall',[]).slice().reverse(),yrs=ANNIV.now-ANNIV.founded;
+ return `<section class="sa-hero rounded-[2rem] text-center text-white px-6 py-16 sm:py-24 mb-10 relative overflow-hidden">
+ <div class="sa-ring r1"></div><div class="sa-ring r2"></div><div class="sa-ring r3"></div>
+ <p class="relative text-sm font-bold tracking-wide text-amber-200 mb-2">Safari Academy · ${ANNIV.founded} – ${ANNIV.now}</p>
+ <div class="relative sa-20" aria-label="20 years">${yrs}</div>
+ <h1 class="relative text-2xl sm:text-4xl font-black mt-2 mb-3">Years of Your Kids, Our Kids</h1>
+ <p class="relative text-emerald-50 max-w-xl mx-auto text-sm sm:text-base">ልጆቻችሁ ልጆቻችን ናቸው! Two decades of teaching, growing and succeeding together. Thank you to every student, teacher and parent who built this school.</p>
+ <div class="relative mt-8 flex flex-wrap justify-center gap-3"><button onclick="document.getElementById('wall').scrollIntoView({behavior:'smooth'})" class="px-6 py-3 rounded-2xl bg-amber-300 hover:bg-amber-200 text-emerald-950 font-black text-sm">Leave a message</button><button onclick="router.navigate('question-bank')" class="px-6 py-3 rounded-2xl bg-white/10 border border-white/30 hover:bg-white/20 font-bold text-sm">Visit the Question Bank</button></div></section>
+ <section class="grid grid-cols-3 gap-3 sm:gap-5 mb-12 text-center">${[[yrs,'years of learning'],[ANNIV.founded,'where it began'],['1','school family']].map(([a,b])=>`<div class="minimal-card rounded-3xl py-6 px-2"><div class="text-3xl sm:text-5xl font-black emerald-gradient-text">${a}</div><div class="text-[11px] sm:text-sm font-semibold text-slate-600 mt-1">${b}</div></div>`).join('')}</section>
+ <section class="max-w-2xl mx-auto mb-14"><h2 class="text-2xl sm:text-3xl font-black text-slate-900 text-center mb-8">Our journey</h2><div class="sa-line">${ANNIV.milestones.map(m=>`<div class="sa-node"><span class="sa-dot"></span><div class="text-sm font-black text-amber-600">${m.y}</div><div class="font-bold text-slate-900">${esc(m.t)}</div><p class="text-sm text-slate-600">${esc(m.d)}</p></div>`).join('')}</div></section>
+ <section id="wall" class="max-w-2xl mx-auto mb-10"><h2 class="text-2xl sm:text-3xl font-black text-slate-900 text-center mb-2">Celebration wall</h2><p class="text-center text-sm text-slate-500 mb-5">Write a message for Safari Academy's 20th year.</p>
+ <div class="minimal-card rounded-3xl bg-white p-5 mb-5"><input id="wn" class="${IN}" placeholder="Your name" maxlength="40"><textarea id="wm" rows="3" class="${IN}" placeholder="Your message" maxlength="240"></textarea><button class="${B}" onclick="postWall()">Post message</button></div>
+ ${w.map(m=>`<div class="minimal-card rounded-2xl bg-white p-4 mb-3"><p class="text-sm text-slate-800">${esc(m.m)}</p><p class="text-xs font-bold text-emerald-700 mt-2">${esc(m.n)} · ${new Date(m.d).toLocaleDateString()}</p></div>`).join('')||'<p class="text-center text-sm text-slate-400">Be the first to post.</p>'}</section>`}
+function postWall(){const n=wn.value.trim(),m=wm.value.trim();if(n.length<2||m.length<3){showToast('Add your name and a message.','error');return}put('sa_wall',[...get('sa_wall',[]),{n,m,d:Date.now()}]);showToast('Message posted. Thank you!','success');renderApp()}
+
+/* ---- Question bank: clear at the top, blurred toward the bottom until unlocked ---- */
+function qCard(q,n,open){return `<div class="minimal-card p-5 rounded-2xl mb-3 bg-white"><div class="flex justify-between text-[11px] font-bold mb-2"><span class="text-emerald-700">${esc(q.subject)} · ${esc(q.topic)}${q.year?' · '+q.year:''}</span><span class="text-slate-400">#${n}</span></div>
+ <p class="font-semibold text-slate-900 mb-3">${clean(q.question)}</p><div class="grid sm:grid-cols-2 gap-2 text-sm">${q.options.map((o,k)=>`<div class="px-3 py-2 rounded-xl border ${open&&k===q.answer?'border-emerald-500 bg-emerald-50':'border-slate-200'}">${'ABCD'[k]}. ${clean(o)}</div>`).join('')}</div>
+ ${open&&q.explanation?`<p class="text-xs text-slate-600 mt-3"><b>Explanation:</b> ${clean(q.explanation)}</p>`:''}</div>`}
+function renderQB(sub){const un=!!sess(),ss=['All',...subjects()],cur=sub||'All',qs=visible().filter(q=>cur==='All'||q.subject===cur);
+ const chips=`<div class="flex flex-wrap gap-2 mb-5">${ss.map((s,i)=>`<button onclick="router.navigate('question-bank',{subject:subjects()[${i-1}]})" class="px-4 py-2 rounded-xl text-xs font-bold ${s===cur?'bg-emerald-600 text-white':'bg-white text-slate-600 border border-slate-200'}">${esc(s)}</button>`).join('').replace("{subject:subjects()[-1]}","{}")}</div>`;
+ const list=qs.map((q,i)=>qCard(q,i+1,un)).join('')||'<p class="text-slate-500">No questions yet.</p>';
+ return `<h1 class="text-3xl font-black text-slate-900 mb-1">Question Bank</h1><p class="text-sm text-slate-500 mb-5">${qs.length} Grade 12 questions${un?' · answers unlocked':''}</p>${chips}
+ ${un?list:`<div class="relative overflow-hidden rounded-3xl" style="max-height:640px"><div aria-hidden="true">${list}</div><div class="sa-fade"></div><div class="absolute inset-x-0 bottom-6 px-4 z-10">${gateCard()}</div></div>`}`}
+function renderStream(){return `<div class="max-w-3xl mx-auto py-8 text-center"><h1 class="text-3xl font-black text-slate-900 mb-2">Which stream are you in?</h1><p class="text-sm text-slate-500 mb-8">Your tests will only include the subjects of your stream. You can change it later from the Mock Exams page.</p>
+ <div class="grid sm:grid-cols-2 gap-4 text-left">${['Natural','Social'].map(k=>`<button onclick="chooseStream('${k}')" class="minimal-card p-6 rounded-3xl text-left hover:border-emerald-500"><div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4"><i data-lucide="${k==='Natural'?'flask-conical':'landmark'}" class="w-6 h-6"></i></div><div class="text-xl font-black text-slate-900 mb-3">${STREAM_LABEL[k]}</div><div class="flex flex-wrap gap-1.5">${STREAMS[k].map(x=>`<span class="px-2.5 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-semibold">${x}</span>`).join('')}</div></button>`).join('')}</div></div>`}
+function chooseStream(k){put('sa_stream',k);selYear=null;showToast('Stream set: '+STREAM_LABEL[k],'success');router.navigate(afterStream&&afterStream!=='stream'?afterStream:'quizzes')}
+function renderFeedback(){return `<div class="max-w-xl mx-auto minimal-card p-6 rounded-3xl bg-white"><h2 class="text-xl font-black mb-2">Feedback & Support</h2><p class="text-sm text-slate-600 mb-4">Found a wrong question or a bug? Tell the team and a teacher will check it.</p><a class="${B} inline-block" href="mailto:lileyu24@gmail.com?subject=Safari%20Academy%20feedback">Email feedback</a></div>`}
+/* ---- Practice / exams ---- */
+function renderPractice(){if(!sess())return `<div class="py-10"><h1 class="text-3xl font-black text-center mb-2">Mock Exams</h1><p class="text-center text-sm text-slate-500 mb-8">Enter this month's passcode to start practicing.</p>${gateCard()}</div>`;
+ if(ex?.live)return '';if(ex?.done)return resultHtml();
+ const ss=subjects(),yrs=years(),pool=visible().filter(q=>!selYear||q.year===selYear),n=pool.length,lab=selYear?selYear+' entrance exam':'every year (shuffled)';
+ const chip=(y,t)=>`<button onclick="setYear(${y})" class="px-4 py-2 rounded-xl text-sm font-bold border transition ${selYear===y?'bg-emerald-600 text-white border-emerald-600':'bg-white text-slate-700 border-slate-200 hover:border-emerald-400'}">${t}</button>`;
+ return `<div class="flex flex-wrap items-center justify-between gap-2 mb-5"><h1 class="text-3xl font-black text-slate-900">Mock Exams</h1><div class="text-sm"><span class="px-3 py-1.5 rounded-full bg-emerald-100 text-emerald-800 font-bold">${STREAM_LABEL[curStream()]}</span> <button class="text-emerald-700 font-bold underline ml-1" onclick="router.navigate('stream')">Change</button></div></div>
+ <div class="minimal-card p-6 rounded-3xl bg-white mb-4"><h2 class="font-black text-lg">Choose an entrance exam year</h2><p class="text-sm text-slate-500 mb-4">Pick a year to practice that year's questions. If you do not pick one, you get a shuffled mix from every year.</p>
+ <div class="flex flex-wrap gap-2">${chip(null,'Every year')}${yrs.map(y=>chip(y,y)).join('')}</div>${yrs.length?'':'<p class="text-xs text-slate-400 mt-3">Year exams appear here once teachers tag questions with a year.</p>'}</div>
+ <div class="minimal-card p-6 rounded-3xl bg-white mb-4"><h2 class="font-black text-lg">Full exam</h2><p class="text-xs font-bold text-emerald-700 mb-1">${esc(lab)}</p><p class="text-sm text-slate-500 mb-4">Mathematics first, then ${ss.filter(x=>x!=='Mathematics'&&pool.some(q=>q.subject===x)).length} more subject(s). Each subject has its own timer with a 10-minute break between subjects. ${n} questions · scored out of ${TOTAL}</p><button class="${B}" ${n?'':'disabled'} onclick="startExam(null,selYear)">Start full exam</button></div>
+ <div class="sa-hero rounded-3xl text-white px-6 py-6 mb-4 flex flex-wrap items-center justify-between gap-4"><div><h2 class="font-black text-lg">Shuffled from every year</h2><p class="text-sm text-emerald-50">A full exam with questions mixed from all entrance exam years.</p></div><button class="px-6 py-3 rounded-2xl bg-amber-300 hover:bg-amber-200 text-emerald-950 font-black text-sm" ${visible().length?'':'disabled'} onclick="setYear(null);startExam(null,null)">Shuffle and start</button></div>
+ <div class="minimal-card p-6 rounded-3xl bg-white mb-4"><h2 class="font-black text-lg mb-1">Single subject</h2><p class="text-xs font-bold text-emerald-700 mb-3">${esc(lab)}</p>${ss.filter(x=>pool.some(q=>q.subject===x)).map(s=>`<div class="flex items-center justify-between py-2 border-b border-slate-100"><span class="text-sm font-semibold">${esc(s)} <span class="text-slate-400 font-normal">${pool.filter(q=>q.subject===s).length} questions</span></span><button class="${B2} !py-2" onclick="startExam(subjects()[${ss.indexOf(s)}],selYear)">Start</button></div>`).join('')||'<p class="text-sm text-slate-400">No questions for this year yet.</p>'}</div>
+ <button class="${B2}" onclick="showBoard()">My scoreboard</button>`}
+const BREAK_SEC=600, fmt=s=>`${String(s/60|0).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`;
+function startTick(){clearInterval(tick);tick=setInterval(()=>{if(!ex?.live)return;const s=Math.max(0,Math.round((ex.end-Date.now())/1000)),t=document.getElementById('tm');
+ if(t){t.textContent=fmt(s);if(ex.phase==='exam')t.className='font-mono font-black text-xl '+(s<300?'text-rose-600':'text-emerald-700')}
+ if(!s){ex.phase==='break'?nextSection():endSection()}},500)}
+function startExam(sub,year=selYear){const all=visible().filter(q=>(!sub||q.subject===sub)&&(!year||q.year===year));if(!all.length){showToast('No questions for that choice yet.','error');return}
+ let order=subjects().filter(x=>all.some(q=>q.subject===x));if(order.includes('Mathematics'))order=['Mathematics',...order.filter(x=>x!=='Mathematics')];
+ const shuf=a=>a.map(q=>[Math.random(),q]).sort((x,y)=>x[0]-y[0]).map(x=>x[1]);
+ ex={sub,year:year||null,qs:order.flatMap(s=>shuf(all.filter(q=>q.subject===s))),order,sec:0,ans:{},live:true,phase:'exam'};beginSection()}
+function beginSection(){ex.sq=ex.qs.filter(q=>q.subject===ex.order[ex.sec]);ex.i=0;ex.phase='exam';ex.end=Date.now()+ex.sq.length*settings.secPerQ*1000;startTick();router.navigate('quizzes')}
+function paintExam(){const q=ex.sq[ex.i],full=!ex.sub,last=ex.sec===ex.order.length-1;scrollTo({top:0});
+ const steps=full?`<div class="flex flex-wrap gap-1.5 mb-4">${ex.order.map((s,k)=>`<span class="px-3 py-1 rounded-full text-[11px] font-bold ${k===ex.sec?'bg-emerald-600 text-white':k<ex.sec?'bg-emerald-100 text-emerald-700':'bg-slate-100 text-slate-500'}">${k<ex.sec?'✓ ':''}${esc(s)}</span>`).join('')}</div>`:'';
+ document.getElementById('app-container').innerHTML=`<div class="max-w-2xl mx-auto">${steps}<div class="flex justify-between items-center mb-3"><span class="text-sm font-bold text-slate-500">${esc(q.subject)} · Question ${ex.i+1} of ${ex.sq.length}</span><span id="tm" class="font-mono font-black text-xl text-emerald-700">${fmt(Math.max(0,Math.round((ex.end-Date.now())/1000)))}</span></div>
+ <div class="minimal-card p-6 rounded-3xl bg-white mb-3"><p class="text-[11px] font-bold text-emerald-700 mb-2">${q.year?q.year+' · ':''}${esc(q.topic)}</p><h2 class="font-bold text-lg mb-4">${clean(q.question)}</h2>
+ ${q.options.map((o,k)=>`<button onclick="pick(${k})" class="w-full text-left px-4 py-3 mb-2 rounded-xl border text-sm font-medium ${ex.ans[q.id]===k?'bg-emerald-600 text-white border-emerald-600':'bg-white border-slate-200 hover:border-emerald-400'}">${'ABCD'[k]}. ${clean(o)}</button>`).join('')}</div>
+ <div class="flex gap-2 mb-3"><button class="${B2} flex-1" ${ex.i?'':'disabled'} onclick="ex.i--;paintExam()">Previous</button><button class="${B2} flex-1" ${ex.i<ex.sq.length-1?'':'disabled'} onclick="ex.i++;paintExam()">Next</button><button class="${BR}" onclick="submitExam()">${full&&!last?'Finish '+esc(q.subject):'Submit'}</button></div>
+ <div class="flex flex-wrap gap-1.5">${ex.sq.map((x,k)=>`<button onclick="ex.i=${k};paintExam()" class="w-9 h-9 rounded-lg text-xs font-bold border ${ex.ans[x.id]!=null?'bg-emerald-100 border-emerald-300 text-emerald-800':'bg-white border-slate-200'} ${k===ex.i?'ring-2 ring-amber-400':''}">${k+1}</button>`).join('')}</div></div>`}
+function pick(k){ex.ans[ex.sq[ex.i].id]=k;paintExam()}
+function submitExam(){const u=ex.sq.filter(q=>ex.ans[q.id]==null).length,last=ex.sec===ex.order.length-1,what=ex.sub||last?'Submit your exam?':`Finish ${ex.order[ex.sec]} and start the break? You cannot come back to it.`;
+ if(confirm(u?`${u} question(s) unanswered. ${what}`:what))endSection()}
+function endSection(){if(ex.sec<ex.order.length-1){ex.phase='break';ex.end=Date.now()+BREAK_SEC*1000;startTick();paintBreak()}else finishExam()}
+function paintBreak(){const done=ex.order[ex.sec],nx=ex.order[ex.sec+1],n=ex.qs.filter(q=>q.subject===nx).length,got=ex.sq.filter(q=>ex.ans[q.id]!=null).length;scrollTo({top:0});
+ document.getElementById('app-container').innerHTML=`<div class="max-w-2xl mx-auto sa-hero rounded-[2rem] text-white text-center px-6 py-12 relative overflow-hidden"><div class="sa-ring r1"></div><div class="sa-ring r2"></div>
+ <p class="relative text-amber-200 text-sm font-bold">${esc(done)} finished · ${got} of ${ex.sq.length} answered</p><h2 class="relative text-3xl font-black mt-1 mb-1">Break time</h2><p class="relative text-emerald-50 text-sm mb-4">Drink some water, stretch and rest your eyes.</p>
+ <div id="tm" class="relative font-mono font-black text-6xl text-amber-300 mb-4">${fmt(BREAK_SEC)}</div>
+ <p class="relative text-sm text-emerald-50 mb-6">Next: <b>${esc(nx)}</b> · ${n} questions · ${Math.ceil(n*settings.secPerQ/60)} min<br>It starts by itself when the break ends.</p>
+ <button onclick="nextSection()" class="relative px-8 py-3 rounded-2xl bg-amber-300 hover:bg-amber-200 text-emerald-950 font-black text-sm">Continue to ${esc(nx)}</button></div>`}
+function nextSection(){if(ex?.phase!=='break')return;ex.sec++;beginSection()}
+function finishExam(){clearInterval(tick);const by={};ex.qs.forEach(q=>{const s=by[q.subject]??={c:0,t:0,tp:{}},t=s.tp[q.topic]??={c:0,t:0};s.t++;t.t++;if(ex.ans[q.id]===q.answer){s.c++;t.c++}});
+ const ks=Object.keys(by),c=ks.reduce((a,s)=>a+by[s].c,0),t=ex.qs.length,pct=ks.reduce((a,s)=>a+by[s].c/by[s].t,0)/ks.length;
+ const r={id:Date.now(),name:sess()?.name,sub:ex.sub,year:ex.year,stream:curStream(),c,t,score:Math.round(pct*(ex.sub?100:TOTAL)),out:ex.sub?100:TOTAL,by:Object.fromEntries(ks.map(s=>[s,by[s].c+'/'+by[s].t])),weak:ks.flatMap(s=>Object.entries(by[s].tp).filter(([,v])=>v.c/v.t<.5).map(([k])=>s+': '+k))};
+ put('sa_res',[...get('sa_res',[]),r]);ex.live=false;ex.done=r;router.navigate('quizzes');if(!r.sub&&r.score>500)setTimeout(fireworks,400)}
+function fireworks(){if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+ const c=document.createElement('canvas');c.setAttribute('aria-hidden','true');c.style.cssText='position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:60';document.body.appendChild(c);
+ const d=devicePixelRatio||1,W=c.width=innerWidth*d,H=c.height=innerHeight*d,x=c.getContext('2d'),cols=['#fcd34d','#f59e0b','#34d399','#10b981','#fb7185','#60a5fa'];let P=[],t0=0,last=0,next=0;
+ const burst=()=>{const cx=(.15+Math.random()*.7)*W,cy=(.12+Math.random()*.38)*H,col=cols[Math.random()*cols.length|0];for(let i=0;i<70;i++){const a=Math.PI*2*i/70,v=(2+Math.random()*4.5)*d;P.push({x:cx,y:cy,vx:Math.cos(a)*v,vy:Math.sin(a)*v,l:1,c:Math.random()<.25?'#ffffff':col})}};
+ const f=now=>{t0=t0||now;const dt=Math.min(2,(now-(last||now))/16.7||1);last=now;x.globalCompositeOperation='destination-out';x.fillStyle='rgba(0,0,0,.18)';x.fillRect(0,0,W,H);x.globalCompositeOperation='lighter';
+  if(now-t0<7000&&now>next){burst();if(Math.random()<.5)burst();next=now+350+Math.random()*300}
+  P=P.filter(p=>p.l>0);for(const p of P){p.vx*=.985;p.vy=p.vy*.985+.05*d*dt;p.x+=p.vx*dt;p.y+=p.vy*dt;p.l-=.012*dt;x.globalAlpha=Math.max(p.l,0);x.fillStyle=p.c;x.beginPath();x.arc(p.x,p.y,2*d,0,7);x.fill()}
+  x.globalAlpha=1;if(now-t0<7000||P.length)requestAnimationFrame(f);else c.remove()};requestAnimationFrame(f)}
+function resultHtml(){const r=ex.done;return `<div class="max-w-2xl mx-auto">${r.score>500&&!r.sub?`<div class="sa-hero rounded-3xl text-white text-center px-6 py-8 mb-4"><p class="text-amber-200 font-bold text-sm">Outstanding result</p><h2 class="text-2xl font-black my-1">You scored above 500!</h2><p class="text-sm text-emerald-50">Safari Academy is proud of you.</p><button class="mt-4 px-5 py-2 rounded-xl bg-amber-300 text-emerald-950 font-black text-sm" onclick="fireworks()">Celebrate again</button></div>`:''}<div class="minimal-card p-6 rounded-3xl bg-white mb-4"><p class="text-sm font-bold text-slate-500">${esc(r.sub||'Full exam')} · ${r.year?esc(r.year)+' entrance exam':'every year'}</p><div class="text-6xl font-black text-emerald-600">${r.score}<span class="text-xl text-slate-400"> / ${r.out}</span></div><p class="text-sm mb-4">${r.c} of ${r.t} correct</p>
+ ${Object.entries(r.by).map(([s,v])=>{const[a,b]=v.split('/');return `<div class="mb-3"><div class="flex justify-between text-sm font-semibold"><span>${esc(s)}</span><span>${v}</span></div><div class="h-2 rounded bg-slate-100"><div class="h-2 rounded bg-emerald-500" style="width:${a/b*100}%"></div></div></div>`}).join('')}
+ ${r.weak.length?`<p class="text-sm mt-4"><b>Topics to revise:</b> ${r.weak.map(esc).join(', ')}</p>`:''}</div>
+ <div class="minimal-card p-6 rounded-3xl bg-white mb-4"><h2 class="font-black mb-3">Review</h2>${ex.qs.map(q=>{const a=ex.ans[q.id],ok=a===q.answer;return `<p class="text-sm mb-3"><b class="${ok?'text-emerald-600':'text-rose-600'}">${ok?'Correct':'Wrong'}</b> ${clean(q.question)}<br><span class="text-xs text-slate-500">Your answer: ${a==null?'none':clean(q.options[a])}${ok?'':' · Correct: '+clean(q.options[q.answer])}</span></p>`}).join('')}</div>
+ <div class="flex gap-2 flex-wrap"><button class="${B}" onclick="startExam(${r.sub?`subjects()[${subjects().indexOf(r.sub)}]`:'null'},${r.year||'null'})">Retake this test</button><button class="${B2}" onclick="showBoard()">Scoreboard</button><button class="${B2}" onclick="ex=null;router.navigate('quizzes')">Back to tests</button></div></div>`}
+function showBoard(){ex=null;const a=get('sa_res',[]).slice().reverse();
+ document.getElementById('app-container').innerHTML=`<div class="max-w-2xl mx-auto minimal-card p-6 rounded-3xl bg-white"><h2 class="font-black text-xl mb-3">Scoreboard (this device)</h2><table class="w-full text-sm"><tr class="text-left text-slate-500"><th>Name</th><th>Test</th><th>Score</th><th>Date</th></tr>${a.map(r=>`<tr class="border-t border-slate-100"><td class="py-2">${esc(r.name)}</td><td>${esc(r.sub||'Full')}${r.year?' · '+esc(r.year):''}</td><td class="font-bold">${r.score}/${r.out}</td><td>${new Date(r.id).toLocaleDateString()}</td></tr>`).join('')||'<tr><td colspan="4" class="py-3 text-slate-400">No tests yet.</td></tr>'}</table><button class="${B2} mt-4" onclick="router.navigate('quizzes')">Back</button></div>`}
+/* ---- Admin ---- */
+function renderAdmin(){if(!sessionStorage.adm){const bl=banLeft('adm');
+ return `<div class="py-10 max-w-sm mx-auto minimal-card p-6 rounded-3xl bg-white"><h2 class="font-black text-xl mb-3">Admin sign in</h2>${bl?`<p class="text-sm text-rose-600 font-semibold">${banMsg('adm')}</p>`:`<input id="ap" type="password" class="${IN}" placeholder="Admin password" autocomplete="off"><p id="ae" class="text-xs text-rose-600 min-h-4 mb-2"></p><button class="${B} w-full" onclick="adminIn()">Sign in</button>`}</div>`}
+ const q=edit||{stream:'Both',subject:'',topic:'',question:'',options:['','','',''],answer:0,explanation:''};
+ return `<div class="flex justify-between items-center mb-4"><h1 class="text-2xl font-black">Admin</h1><button class="${B2} !py-2" onclick="delete sessionStorage.adm;router.navigate('home')">Sign out</button></div>
+ <div class="minimal-card p-6 rounded-3xl bg-white mb-4"><h2 class="font-black mb-3">${edit?'Edit':'Add'} question</h2>
+ <div class="grid sm:grid-cols-3 gap-x-3"><input id="s" list="sl" class="${IN}" placeholder="Subject" value="${esc(q.subject)}"><input id="t" class="${IN}" placeholder="Topic" value="${esc(q.topic)}"><input id="yr" type="number" min="1990" max="2100" class="${IN}" placeholder="Exam year (e.g. 2019)" value="${esc(q.year||'')}"></div><datalist id="sl">${allSubjects().map(s=>`<option value="${esc(s)}">`).join('')}</datalist>
+ <textarea id="qq" rows="3" class="${IN}" placeholder="Question">${esc(q.question)}</textarea>${q.options.map((o,k)=>`<input class="oo ${IN}" placeholder="Option ${'ABCD'[k]}" value="${esc(o)}">`).join('')}
+ <select id="stm" class="${IN}">${['Both','Natural','Social'].map(k=>`<option value="${k}" ${q.stream===k?'selected':''}>${k==='Both'?'Used in both streams':STREAM_LABEL[k]+' only'}</option>`).join('')}</select><select id="a" class="${IN}">${[0,1,2,3].map(k=>`<option value="${k}" ${q.answer===k?'selected':''}>Correct answer: ${'ABCD'[k]}</option>`).join('')}</select><textarea id="ex" rows="2" class="${IN}" placeholder="Explanation (optional)">${esc(q.explanation)}</textarea>
+ <p id="ae" class="text-xs text-rose-600 min-h-4 mb-2"></p><div class="flex gap-2"><button class="${B}" onclick="saveQ()">${edit?'Save changes':'Add question'}</button>${edit?`<button class="${B2}" onclick="edit=null;router.navigate('admin')">Cancel</button>`:''}</div></div>
+ <div class="minimal-card p-6 rounded-3xl bg-white mb-4"><h2 class="font-black mb-3">Exam time</h2><input id="spq" type="number" min="10" class="${IN}" value="${settings.secPerQ}"><button class="${B2}" onclick="settings.secPerQ=Math.max(10,+spq.value||90);saveDB();showToast('Saved','success')">Save seconds per question</button></div>
+ <div class="minimal-card p-6 rounded-3xl bg-white mb-4"><h2 class="font-black mb-3">Questions (${appState.questions.length})</h2>${appState.questions.map((x,i)=>`<div class="flex gap-3 items-start py-2 border-b border-slate-100 text-sm"><div class="flex-1"><b>${esc(x.subject)}</b> <span class="text-xs text-emerald-700 font-bold">${esc(x.stream||'Both')}</span> <span class="text-slate-400">${esc(x.topic)}${x.year?' · '+x.year:''}</span><br>${clean(x.question)}</div><button class="${B2} !py-1 !px-3" onclick="edit=appState.questions[${i}];router.navigate('admin')">Edit</button><button class="${BR}" onclick="delQ(${i})">Delete</button></div>`).join('')}</div>
+ <div class="minimal-card p-6 rounded-3xl bg-white"><h2 class="font-black mb-1">Publish to students</h2><p class="text-xs text-slate-500 mb-3">Questions you add are saved in this browser. Export <code>questions.json</code>, replace it in GitHub, and Vercel redeploys for everyone.</p><div class="flex gap-2"><button class="${B}" onclick="exportQ()">Export questions.json</button><button class="${B2}" onclick="fl.click()">Import</button><input id="fl" type="file" accept=".json" hidden onchange="importQ(event)"></div></div>`}
+async function adminIn(){if(await check(ap.value,ADMIN_HASH)){put('sa_f_adm',0);sessionStorage.adm=1;router.navigate('admin')}else{const l=fail('adm');if(l)ae.textContent=`Wrong password. ${l} attempt(s) left.`;else renderApp()}}
+function saveQ(){const o=[...document.querySelectorAll('.oo')].map(i=>i.value.trim()),n={id:edit?.id||Date.now(),subject:allSubjects().find(x=>x.toLowerCase()===s.value.trim().toLowerCase())||s.value.trim(),year:+yr.value||'',stream:stm.value,grade:'Grade 12',topic:t.value.trim(),question:qq.value.trim(),options:o,answer:+a.value,explanation:ex.value?.trim?.()||''};
+ if(!n.subject||!n.topic||!n.question||o.some(x=>!x)){ae.textContent='Fill in subject, topic, question and all four options.';return}
+ if(n.year&&(n.year<1990||n.year>2100)){ae.textContent='Year must be between 1990 and 2100.';return}
+ edit?appState.questions=appState.questions.map(x=>x.id===n.id?n:x):appState.questions.push(n);edit=null;saveDB();router.navigate('admin')}
+function delQ(i){if(confirm('Delete this question?')){appState.questions.splice(i,1);saveDB();router.navigate('admin')}}
+function exportQ(){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify({settings,questions:appState.questions},null,1)],{type:'application/json'}));a.download='questions.json';a.click()}
+async function importQ(e){try{const d=JSON.parse(await e.target.files[0].text());if(!Array.isArray(d.questions))throw 0;settings={secPerQ:Math.max(10,+d.settings?.secPerQ||90)};appState.questions=sane(d.questions);saveDB();router.navigate('admin')}catch{ae.textContent='That is not a valid questions.json.'}}
+setThemeIcons();loadDB().then(()=>router.navigate('home'));
+
+    </script>
+</body>
+</html>

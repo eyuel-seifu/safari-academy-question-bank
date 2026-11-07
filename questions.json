@@ -1,0 +1,279 @@
+{
+ "settings": {
+  "secPerQ": 90
+ },
+ "questions": [
+  {
+   "id": 101,
+   "subject": "Physics",
+   "stream": "Natural Science",
+   "grade": "Grade 12",
+   "topic": "Kinematics & Vectors",
+   "question": "A projectile is fired at an angle of 30° with an initial velocity of 40 m/s. What is its horizontal velocity component?",
+   "options": [
+    "20 m/s",
+    "34.6 m/s",
+    "40 m/s",
+    "10 m/s"
+   ],
+   "answer": 1,
+   "explanation": "Using $v_x = v_0 \\cos(\\theta)$: $v_x = 40 \\times \\cos(30^\\circ) = 34.64\\text{ m/s}$."
+  },
+  {
+   "id": 102,
+   "subject": "Physics",
+   "stream": "Natural Science",
+   "grade": "Grade 12",
+   "topic": "Electromagnetism",
+   "question": "What magnetic force is exerted on a 2-meter long wire carrying 5 amperes perpendicular to a uniform 0.4 Tesla magnetic field?",
+   "options": [
+    "1.0 N",
+    "2.0 N",
+    "4.0 N",
+    "0.4 N"
+   ],
+   "answer": 2,
+   "explanation": "Using $F = I L B \\sin(90^\\circ) = 5 \\times 2 \\times 0.4 = 4.0\\text{ N}$."
+  },
+  {
+   "id": 103,
+   "subject": "Mathematics",
+   "stream": "Natural Science",
+   "grade": "Grade 12",
+   "topic": "Calculus (Derivatives)",
+   "question": "What is the derivative of $f(x) = e^{2x} \\sin(x)$ with respect to $x$?",
+   "options": [
+    "2 e^{2x} cos(x)",
+    "e^{2x} (2 sin(x) + cos(x))",
+    "e^{2x} (sin(x) + 2 cos(x))",
+    "2 e^{2x} sin(x)"
+   ],
+   "answer": 1,
+   "explanation": "By Product Rule: $f'(x) = e^{2x}(2\\sin(x) + \\cos(x))$."
+  },
+  {
+   "id": 104,
+   "subject": "Mathematics",
+   "stream": "Natural Science",
+   "grade": "Grade 12",
+   "topic": "Sequences & Series",
+   "question": "Find the 10th term of an arithmetic progression where $a_1 = 7$ and common difference $d = 4$.",
+   "options": [
+    "43",
+    "47",
+    "39",
+    "51"
+   ],
+   "answer": 0,
+   "explanation": "Using $a_n = a_1 + (n-1)d$: $a_{10} = 7 + (9)(4) = 43$."
+  },
+  {
+   "id": 105,
+   "subject": "Chemistry",
+   "stream": "Natural Science",
+   "grade": "Grade 12",
+   "topic": "Chemical Kinetics",
+   "question": "If doubling the concentration of reactant A quadruples the rate of reaction, what is the order of reaction with respect to A?",
+   "options": [
+    "First order",
+    "Second order",
+    "Zero order",
+    "Third order"
+   ],
+   "answer": 1,
+   "explanation": "Since Rate $\\propto [A]^n$, $2^n = 4 \\implies n = 2$ (Second Order)."
+  },
+  {
+   "id": 106,
+   "subject": "Biology",
+   "stream": "Natural Science",
+   "grade": "Grade 12",
+   "topic": "Genetics & Molecular Biology",
+   "question": "During protein synthesis, which organelle translates messenger RNA (mRNA) into amino acid chains?",
+   "options": [
+    "Mitochondrion",
+    "Ribosome",
+    "Golgi Apparatus",
+    "Lysosome"
+   ],
+   "answer": 1,
+   "explanation": "Ribosomes read mRNA codons and synthesize polypeptide chains."
+  },
+  {
+   "id": 107,
+   "subject": "English",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Conditional Grammar",
+   "question": "Choose the correct form: \"If the supervisor ______ the roster earlier, Eyuel would have received his login token.\"",
+   "options": [
+    "checked",
+    "had checked",
+    "has checked",
+    "will check"
+   ],
+   "answer": 1,
+   "explanation": "Third conditional sentence requiring past perfect (\"had checked\")."
+  },
+  {
+   "id": 201,
+   "subject": "Mathematics",
+   "stream": "Social",
+   "grade": "Grade 12",
+   "topic": "Algebra",
+   "question": "If 3x + 5 = 20, what is x?",
+   "options": [
+    "3",
+    "4",
+    "5",
+    "6"
+   ],
+   "answer": 2,
+   "explanation": "3x = 15, so x = 5."
+  },
+  {
+   "id": 202,
+   "subject": "Mathematics",
+   "stream": "Social",
+   "grade": "Grade 12",
+   "topic": "Percentages",
+   "question": "What is 15% of 200?",
+   "options": [
+    "20",
+    "25",
+    "30",
+    "35"
+   ],
+   "answer": 2,
+   "explanation": "0.15 × 200 = 30."
+  },
+  {
+   "id": 203,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Number Series",
+   "question": "What comes next? 2, 4, 8, 16, ...",
+   "options": [
+    "18",
+    "24",
+    "32",
+    "64"
+   ],
+   "answer": 2,
+   "explanation": "Each number is doubled."
+  },
+  {
+   "id": 204,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Logical Reasoning",
+   "question": "Ali is taller than Beza, and Beza is taller than Chala. Who is the shortest?",
+   "options": [
+    "Ali",
+    "Beza",
+    "Chala",
+    "Cannot tell"
+   ],
+   "answer": 2,
+   "explanation": "Ali > Beza > Chala, so Chala is shortest."
+  },
+  {
+   "id": 205,
+   "subject": "Geography",
+   "stream": "Social",
+   "grade": "Grade 12",
+   "topic": "Physical Geography",
+   "question": "The Blue Nile (Abbay) begins from which lake?",
+   "options": [
+    "Lake Tana",
+    "Lake Ziway",
+    "Lake Abaya",
+    "Lake Langano"
+   ],
+   "answer": 0,
+   "explanation": "The Abbay flows out of Lake Tana."
+  },
+  {
+   "id": 206,
+   "subject": "Geography",
+   "stream": "Social",
+   "grade": "Grade 12",
+   "topic": "Physical Geography",
+   "question": "What is the highest mountain in Ethiopia?",
+   "options": [
+    "Ras Dashen",
+    "Mount Zuqualla",
+    "Mount Batu",
+    "Mount Choqa"
+   ],
+   "answer": 0,
+   "explanation": "Ras Dashen is the highest peak in Ethiopia."
+  },
+  {
+   "id": 207,
+   "subject": "History",
+   "stream": "Social",
+   "grade": "Grade 12",
+   "topic": "Modern Ethiopian History",
+   "question": "In which year was the Battle of Adwa fought?",
+   "options": [
+    "1884",
+    "1896",
+    "1905",
+    "1936"
+   ],
+   "answer": 1,
+   "explanation": "The Battle of Adwa took place in 1896."
+  },
+  {
+   "id": 208,
+   "subject": "History",
+   "stream": "Social",
+   "grade": "Grade 12",
+   "topic": "Modern Ethiopian History",
+   "question": "Which emperor led the Ethiopian army at the Battle of Adwa?",
+   "options": [
+    "Tewodros II",
+    "Yohannes IV",
+    "Menelik II",
+    "Haile Selassie"
+   ],
+   "answer": 2,
+   "explanation": "Emperor Menelik II led the army with Empress Taytu."
+  },
+  {
+   "id": 209,
+   "subject": "Economics",
+   "stream": "Social",
+   "grade": "Grade 12",
+   "topic": "Basic Concepts",
+   "question": "The value of the next best alternative given up when making a choice is called:",
+   "options": [
+    "Opportunity cost",
+    "Marginal revenue",
+    "Inflation",
+    "Profit"
+   ],
+   "answer": 0,
+   "explanation": "This is the definition of opportunity cost."
+  },
+  {
+   "id": 210,
+   "subject": "Economics",
+   "stream": "Social",
+   "grade": "Grade 12",
+   "topic": "Basic Concepts",
+   "question": "Which of these is a factor of production?",
+   "options": [
+    "Labour",
+    "Tax",
+    "Inflation",
+    "Budget"
+   ],
+   "answer": 0,
+   "explanation": "Land, labour, capital and entrepreneurship are the factors of production."
+  }
+ ]
+}
