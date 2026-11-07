@@ -1,44 +1,48 @@
-# Safari Academy Question Bank
-Free, open-source Grade 12 exam practice for Safari Academy students. A static site: no build step, no server.
-Students enter a monthly passcode once. Admin: press **Ctrl/Cmd + Shift + A three times**.
+# Safari Academy | Grade 12 EUEE Question Bank & Portal
 
-## 1. Set your passwords (do this first)
-Passwords are stored as salted hashes. For each new passcode run (needs Node.js):
+Official Grade 12 Ethiopian University Entrance Examination (EUEE) revision and mock exam platform built specifically for Safari Academy students and faculty. 
 
-    node make-hash.js "a-long-passcode-here"
+> **"Your Kids Our Kids" • "ልጆቻችሁ ልጆቻችን ናቸው!"**
 
-Paste the output into the CONFIG block at the top of the last `<script>` in `index.html`:
-- `ADMIN_HASH` – hash of your admin password.
-- `MONTH_CODES` – one hash per month, e.g. `'2027-01': 'salt:hash'`.
+---
 
-The demo passwords (`ChangeMe-Admin-2026`, `SAFARI-NOV26`, `SAFARI-DEC26`) are public. **Replace them before sharing the link.**
-Use long values (admin 16+ characters, passcodes 12+, e.g. three random words and a number) because the repo is public.
-Give students the plain passcode through the school (class announcement or notice board), never in the repo.
+## 🚀 About the Project
+The Safari Academy Question Bank is a school-owned, open-source revision platform designed to solve the scarcity of organized, curriculum-specific practice materials. It provides students with lightweight, mobile-optimized access to hundreds of EUEE-standard questions, timed mock exams, instant scoring, and detailed explanations.
 
-## 2. Upload to GitHub
-1. Sign in at github.com, click **New repository**, name it `safari-academy-question-bank`, choose **Public**, click **Create repository**.
-2. Click **uploading an existing file**, drag in every file from this folder (`index.html`, `questions.json`, `vercel.json`, `make-hash.js`, `README.md`, `LICENSE`, `.gitignore`), then **Commit changes**.
+---
 
-Or with Git:
+## ✨ Key Features
 
-    git init
-    git add .
-    git commit -m "Safari Academy Question Bank"
-    git branch -M main
-    git remote add origin https://github.com/YOUR-USERNAME/safari-academy-question-bank.git
-    git push -u origin main
+* **Curriculum & Stream Alignment:** Supports both Natural Science and Social Science streams with tailored subject pools (Mathematics, Physics, Chemistry, Biology, English, Aptitude, Geography, History, and Economics).
+* **Mock Exam Engine:** 
+  * Full exams scored out of 600 (matching national grading weights).
+  * Single-subject tests scored out of 100.
+  * Option to practice shuffled mixes from all years or target specific entrance exam years.
+  * Built-in countdown timers with automated section transitions and 10-minute breaks.
+* **Monthly Passcode Security:** Uses PBKDF2-hashed monthly access codes to ensure secure, authorized student access.
+* **Instant Feedback & Analytics:** Post-exam reviews highlighting correct/incorrect answers, step-by-step explanations, and a breakdown of weak topics requiring further study.
+* **Local Data Persistence & Scoreboards:** Tracks personal performance history and scores locally on user devices.
+* **Admin & Teacher Tools:** Dedicated portal for teachers and administrators to add, review, edit questions, and export updated question banks via `questions.json`.
+* **20th Anniversary Wall:** A dedicated commemorative space celebrating two decades of Safari Academy history with an interactive message board.
 
-## 3. Publish on Vercel
-1. Go to vercel.com and sign up with **Continue with GitHub**.
-2. Click **Add New → Project**, pick `safari-academy-question-bank`, click **Import**.
-3. Framework Preset: **Other**. Leave Build Command and Output Directory empty. Click **Deploy**.
-4. In about a minute you get a link like `https://safari-academy-question-bank.vercel.app`. Send that to the principal.
+---
 
-Every `git push` or file edit on GitHub redeploys automatically.
+## 🛠️ Tech Stack & Architecture
+* **Frontend:** Single-file architecture (`index.html`) utilizing **Tailwind CSS** (via CDN) for responsive styling and dark mode support, with **Lucide Icons**.
+* **State Management & Storage:** Vanilla JavaScript leveraging browser `localStorage` and `sessionStorage` for secure session tracking, user scores, and dynamic view routing.
+* **Security:** Cryptographic PBKDF2 hashing for secure administrative and monthly passcode verification.
 
-## Adding questions for everyone
-Questions added in the admin page live only in that browser. Click **Export questions.json**, replace `questions.json` in GitHub (open the file, pencil icon, paste, commit). Vercel redeploys and all students see them.
+---
 
-## Security: what this protects and what it does not
-Protects: no plain-text passwords in the code, salted PBKDF2 hashes, security headers (CSP, no framing, HTTPS only), pinned script versions, escaped text everywhere, validated question files, 5-attempt lockouts.
-Does not protect: lockouts and scores are stored in each browser, so clearing site data resets them, and anyone with a strong GPU could try to guess weak passcodes from the public hashes offline. The admin page cannot change what other students see, because students only read `questions.json` from GitHub. For per-student accounts, a shared scoreboard or unbreakable lockouts, add a backend (for example Supabase) later.
+## 👥 Project Contributors & Maintainers
+
+* **Lead Developer & Maintainer:** eyuel-seifu (Grade 11DpN) — *Self-taught web developer and AI enthusiast responsible for system architecture, frontend implementation, and deployment.*
+* **Safari Academy Faculty & Administration:** *Providing curriculum alignment, question review, academic oversight, and student testing support.*
+
+---
+
+## 🚀 Getting Started & Local Development
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/eyuel-seifu/safari-academy-question-bank.git](https://github.com/eyuel-seifu/safari-academy-question-bank.git)
