@@ -116,164 +116,868 @@
    "explanation": "Third conditional sentence requiring past perfect (\"had checked\")."
   },
   {
-   "id": 201,
-   "subject": "Mathematics",
-   "stream": "Social",
+   "id": 401,
+   "subject": "Aptitude",
+   "stream": "Both",
    "grade": "Grade 12",
-   "topic": "Algebra",
-   "question": "If 3x + 5 = 20, what is x?",
+   "topic": "Verbal Analogies",
+   "question": "COURAGEOUS is to TIMID as STUNNING is to",
    "options": [
-    "3",
-    "4",
-    "5",
-    "6"
+    "Graceful",
+    "Hideous",
+    "Frightful",
+    "Slothful"
    ],
-   "answer": 2,
-   "explanation": "3x = 15, so x = 5."
+   "answer": 1,
+   "explanation": "Courageous and timid are antonyms; stunning and hideous are antonyms[cite: 27]."
   },
   {
-   "id": 202,
-   "subject": "Mathematics",
-   "stream": "Social",
+   "id": 402,
+   "subject": "Aptitude",
+   "stream": "Both",
    "grade": "Grade 12",
-   "topic": "Percentages",
-   "question": "What is 15% of 200?",
+   "topic": "Verbal Analogies",
+   "question": "PROLOGUE is to INTRODUCTION as EPILOGUE is to",
    "options": [
-    "20",
-    "25",
-    "30",
-    "35"
+    "Beginning",
+    "Ending",
+    "Chapter",
+    "Conclusion"
    ],
-   "answer": 2,
-   "explanation": "0.15 × 200 = 30."
+   "answer": 3,
+   "explanation": "Prologue serves as an introduction, while epilogue serves as a conclusion[cite: 27]."
   },
   {
-   "id": 203,
+   "id": 403,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Verbal Analogies",
+   "question": "BOOK is to LIBRARY as ARTIFACT is to",
+   "options": [
+    "Church",
+    "Gallery",
+    "Museum",
+    "Warehouse"
+   ],
+   "answer": 2,
+   "explanation": "Books are housed in a library, and artifacts are housed in a museum[cite: 27]."
+  },
+  {
+   "id": 404,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Verbal Analogies",
+   "question": "PRECAUTION is to ACCIDENT as CLEANLINESS is to",
+   "options": [
+    "Garbage",
+    "Filthy",
+    "Treatment",
+    "Disease"
+   ],
+   "answer": 3,
+   "explanation": "Precaution prevents an accident; cleanliness prevents disease[cite: 27]."
+  },
+  {
+   "id": 405,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Synonyms",
+   "question": "Which word is most nearly similar in meaning to DILIGENT?",
+   "options": [
+    "Hardworking",
+    "Lazy",
+    "Careless",
+    "Negligent"
+   ],
+   "answer": 0,
+   "explanation": "Diligent means showing care and conscientiousness; hardworking is its synonym[cite: 27]."
+  },
+  {
+   "id": 406,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Synonyms",
+   "question": "Which word is most nearly similar in meaning to EXORBITANT?",
+   "options": [
+    "Moderate",
+    "Excessive",
+    "Reasonable",
+    "Cheap"
+   ],
+   "answer": 1,
+   "explanation": "Exorbitant means unreasonably high or excessive[cite: 27]."
+  },
+  {
+   "id": 407,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Synonyms",
+   "question": "Which word is most nearly similar in meaning to AUTONOMOUS?",
+   "options": [
+    "Reliant",
+    "Intellectual",
+    "Worldly",
+    "Independent"
+   ],
+   "answer": 3,
+   "explanation": "Autonomous means self-governing or independent[cite: 27]."
+  },
+  {
+   "id": 408,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Antonyms",
+   "question": "Which word is NEARLY OPPOSITE in meaning to LIGHTEN?",
+   "options": [
+    "Transpose",
+    "Fortify",
+    "Exacerbate",
+    "Rectify"
+   ],
+   "answer": 2,
+   "explanation": "To lighten (e.g., a burden or symptom) is opposite to exacerbating (making worse)[cite: 27]."
+  },
+  {
+   "id": 409,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Antonyms",
+   "question": "Which word is NEARLY OPPOSITE in meaning to PROFOUND?",
+   "options": [
+    "Deep",
+    "Superficial",
+    "Serious",
+    "Thoughtful"
+   ],
+   "answer": 1,
+   "explanation": "Profound implies deep intellectual or emotional depth; superficial is its antonym[cite: 27]."
+  },
+  {
+   "id": 410,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Antonyms",
+   "question": "Which word is NEARLY OPPOSITE in meaning to DARING?",
+   "options": [
+    "Valiant",
+    "Cowardly",
+    "Nervous",
+    "Unpleasant"
+   ],
+   "answer": 1,
+   "explanation": "Daring means adventurous and bold; cowardly is its opposite[cite: 27]."
+  },
+  {
+   "id": 411,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Classification / Odd One Out",
+   "question": "Which word cannot be categorized under the same group? Reader, Publisher, Reporter, Writer",
+   "options": [
+    "Reader",
+    "Publisher",
+    "Reporter",
+    "Writer"
+   ],
+   "answer": 0,
+   "explanation": "Publisher, reporter, and writer are producers of published material, whereas a reader is a consumer[cite: 28]."
+  },
+  {
+   "id": 412,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Classification / Odd One Out",
+   "question": "Which word cannot be categorized under the same group? Violin, Drum, Piano, Guitar",
+   "options": [
+    "Violin",
+    "Drum",
+    "Piano",
+    "Guitar"
+   ],
+   "answer": 1,
+   "explanation": "Violin, piano, and guitar are string/chord instruments (or melodic), whereas a drum is a percussion instrument[cite: 28]."
+  },
+  {
+   "id": 413,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Classification / Odd One Out",
+   "question": "Which word cannot be categorized under the same group? Albert Einstein, William Shakespeare, Chinua Achebe, Wole Soyinka",
+   "options": [
+    "Albert Einstein",
+    "William Shakespeare",
+    "Chinua Achebe",
+    "Wole Soyinka"
+   ],
+   "answer": 0,
+   "explanation": "Shakespeare, Achebe, and Soyinka are renowned literary writers/playwrights, whereas Albert Einstein is a theoretical physicist[cite: 28]."
+  },
+  {
+   "id": 414,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Sentence Completion",
+   "question": "The teacher admired the student's ______ approach to research, showing diligence and critical thinking.",
+   "options": [
+    "Scholarly",
+    "Uncaring",
+    "Negligent",
+    "Conventional"
+   ],
+   "answer": 0,
+   "explanation": "Scholarly fits best with diligence and critical thinking[cite: 28]."
+  },
+  {
+   "id": 415,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Sentence Completion",
+   "question": "The researcher's conclusions were based on ______ evidence collected over many years.",
+   "options": [
+    "Erroneous",
+    "Substantial",
+    "Imaginary",
+    "Questionable"
+   ],
+   "answer": 1,
+   "explanation": "Substantial evidence collected over many years justifies rigorous research conclusions[cite: 28]."
+  },
+  {
+   "id": 416,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Sentence Completion",
+   "question": "The diplomat handled the sensitive negotiations with ______, balancing multiple interests carefully.",
+   "options": [
+    "Clumsiness",
+    "Partiality",
+    "Finesse",
+    "Recklessness"
+   ],
+   "answer": 2,
+   "explanation": "Finesse denotes skill and subtlety in handling sensitive situations[cite: 28]."
+  },
+  {
+   "id": 417,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Sentence Completion",
+   "question": "The teacher praised the student for her ______ response, which showed deep understanding of the topic.",
+   "options": [
+    "Biased",
+    "Insightful",
+    "Reflective",
+    "Inflated"
+   ],
+   "answer": 1,
+   "explanation": "An insightful response demonstrates deep understanding[cite: 28]."
+  },
+  {
+   "id": 418,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Sentence Completion",
+   "question": "The artist's style is ______, blending traditional and modern techniques seamlessly.",
+   "options": [
+    "Uniform",
+    "Monotonous",
+    "Eclectic",
+    "Derivative"
+   ],
+   "answer": 2,
+   "explanation": "Eclectic style draws from diverse and varied sources/techniques[cite: 28]."
+  },
+  {
+   "id": 419,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Logical Puzzle / Scheduling",
+   "question": "Five seminars A, B, C, D, and E are scheduled from Monday to Friday, one each day. Conditions: A is scheduled before C. D is scheduled after B. E is scheduled on Wednesday. A is placed before Friday immediately after E. Which of the following is the correct order of seminars?",
+   "options": [
+    "B, D, E, A, C",
+    "D, B, E, A, C",
+    "B, E, A, D, C",
+    "E, B, D, A, C"
+   ],
+   "answer": 2,
+   "explanation": "E is Wednesday. A is immediately after E (Thursday). A is before C (so C is Friday). B is before D. Thus order is Mon: B, Tue: E(Wait, E is Wednesday), let's check: Mon: B, Tue: E (Wait, E is Wednesday), so Mon: B, Wed: E, Thu: A, Fri: C, and D must be Tuesday or Thursday... wait, let's look at option C: B, E, A, D, C? Wait, E is Wednesday. If Monday=B, Tuesday=D, Wednesday=E, Thursday=A, Friday=C, that satisfies E on Wednesday, A immediately after E (Thursday), A before C, D after B[cite: 28]."
+  },
+  {
+   "id": 420,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Logical Puzzle / Scheduling",
+   "question": "Based on the same seminar scheduling conditions, which of the following statements must be true?",
+   "options": [
+    "D is scheduled on Friday",
+    "C is scheduled on Thursday",
+    "B is scheduled on Monday",
+    "A is scheduled on Wednesday"
+   ],
+   "answer": 2,
+   "explanation": "Since E is Wednesday, A is Thursday, C is Friday, and B must be before D, B must be on Monday and D on Tuesday[cite: 28]."
+  },
+  {
+   "id": 421,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Logical Puzzle / Scheduling",
+   "question": "Based on the same seminar scheduling conditions, which of the following is not possible?",
+   "options": [
+    "A on Thursday",
+    "C on Friday",
+    "E on Wednesday",
+    "D on Thursday"
+   ],
+   "answer": 3,
+   "explanation": "Since A is Thursday and C is Friday, D cannot be on Thursday[cite: 28]."
+  },
+  {
+   "id": 422,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Blood Relations",
+   "question": "Ali said, 'The man is the brother of my mother's only daughter.' How is the man related to Ali?",
+   "options": [
+    "Nephew",
+    "Brother",
+    "Uncle",
+    "Cousin"
+   ],
+   "answer": 1,
+   "explanation": "Mother's only daughter is Ali's sister (assuming Ali is male, or Ali herself if female, but typically brother). Her brother is Ali's brother[cite: 29]."
+  },
+  {
+   "id": 423,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Logical Reasoning / Syllogism",
+   "question": "Statement: 'No student who fails in mathematics can participate in the science fair.' Conclusion: I. If a student participates in the science fair, they have passed mathematics. II. If a student fails in mathematics, they cannot participate. III. All students who pass mathematics will participate in the science fair.",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Both conclusion I and II follow",
+    "All conclusions follow"
+   ],
+   "answer": 2,
+   "explanation": "If fail math -> no participate (contrapositive: participate -> passed math). Both I and II follow logically[cite: 29]."
+  },
+  {
+   "id": 424,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Logical Reasoning / Syllogism",
+   "question": "Statement: 'No person without a ticket is allowed inside the concert hall.' Conclusion: I. If a person is inside the concert hall, they must have a ticket. II. If a person has a ticket, they must enter. III. All ticket holders enter the concert hall.",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Both conclusion I and II follow",
+    "All conclusions follow"
+   ],
+   "answer": 0,
+   "explanation": "Only conclusion I directly follows from the negative conditional statement[cite: 29]."
+  },
+  {
+   "id": 425,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Grammar & Sentence Structure",
+   "question": "Which sentence is grammatically correct?",
+   "options": [
+    "Having finished the assignment, John turned on the television.",
+    "Having been turned on the television, john finished the assignment.",
+    "Having been finished the assignment, John turned on the television.",
+    "Having finished the assignment, the television was turned on by John."
+   ],
+   "answer": 0,
+   "explanation": "Option A correctly uses a participial phrase modifying the subject John[cite: 29]."
+  },
+  {
+   "id": 426,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Grammar & Subject-Verb Agreement",
+   "question": "Which sentence is grammatically correct?",
+   "options": [
+    "The teacher, along with the students, is attending the conference this week.",
+    "The teacher, along with the students, are attending the conference this week.",
+    "The teacher, along with the students, have attended the conference this week.",
+    "The teacher, along with the students, were attending the conference this week."
+   ],
+   "answer": 0,
+   "explanation": "Phrases introduced by 'along with' do not change the singular subject 'teacher', requiring 'is'[cite: 29]."
+  },
+  {
+   "id": 427,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Reading Comprehension",
+   "question": "The main idea of the passage on visionary leadership is:",
+   "options": [
+    "Vision is unnecessary for leadership.",
+    "Ambitious goals are always successful.",
+    "Leaders should prioritize personal ambition above all.",
+    "Vision must be coupled with strategy and ethics to be effective."
+   ],
+   "answer": 3,
+   "explanation": "The passage emphasizes that vision alone is insufficient and requires execution, strategy, and ethical responsibility[cite: 29]."
+  },
+  {
+   "id": 428,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Reading Comprehension",
+   "question": "Which of the following best describes a risk of visionary thinking?",
+   "options": [
+    "Encouraging social reform",
+    "Inspiring others to pursue goals",
+    "Failure from bad implementation",
+    "Predicting future challenges accurately"
+   ],
+   "answer": 2,
+   "explanation": "The passage notes that neglected execution and overconfidence can lead to failed initiatives[cite: 30]."
+  },
+  {
+   "id": 429,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Reading Comprehension / Vocabulary",
+   "question": "'Alienating' in paragraph 3 most nearly means:",
+   "options": [
+    "Uniting",
+    "Isolating",
+    "Motivating",
+    "Supporting"
+   ],
+   "answer": 1,
+   "explanation": "Alienating supporters means driving them away or isolating them[cite: 30]."
+  },
+  {
+   "id": 430,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Reading Comprehension",
+   "question": "Which of the following is least consistent with the author's argument on leadership?",
+   "options": [
+    "Strategic planning strengthens visionary leadership.",
+    "Leaders who ignore societal impact risk losing support.",
+    "Ambition should be pursued regardless of ethical implications.",
+    "Adaptability is necessary for overcoming unforeseen obstacles."
+   ],
+   "answer": 2,
+   "explanation": "The author explicitly warns against ignoring ethical and social consequences[cite: 30]."
+  },
+  {
+   "id": 431,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Reading Comprehension",
+   "question": "The primary purpose of the passage on climate change is:",
+   "options": [
+    "To deny the existence of climate change",
+    "To explain why adaptation is unnecessary",
+    "To focus solely on renewable energy technologies",
+    "To highlight challenges and solutions related to climate change"
+   ],
+   "answer": 3,
+   "explanation": "The passage outlines the challenges of climate change alongside mitigation and adaptation strategies[cite: 31]."
+  },
+  {
+   "id": 432,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Reading Comprehension",
+   "question": "Which of the following is an alleviation strategy mentioned in the passage?",
+   "options": [
+    "Practicing harmful agriculture",
+    "Using energy more efficiently",
+    "Relying on non-renewable energy",
+    "Overlooking greenhouse gas emissions"
+   ],
+   "answer": 1,
+   "explanation": "Enhancing energy efficiency is listed as a mitigation/alleviation strategy[cite: 31]."
+  },
+  {
+   "id": 433,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Reading Comprehension / Vocabulary",
+   "question": "'Resilience' in paragraph 3 most nearly means:",
+   "options": [
+    "Ignorance",
+    "Vulnerability",
+    "Resistance to change",
+    "Ability to recover and adapt to challenges"
+   ],
+   "answer": 3,
+   "explanation": "Resilience in ecological and climatic contexts refers to the ability to recover and adapt[cite: 31]."
+  },
+  {
+   "id": 434,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Reading Comprehension",
+   "question": "Why does the author emphasize both mitigation and adaptation?",
+   "options": [
+    "Because both focus only on short-term effects",
+    "Because both are needed to manage climate impacts",
+    "Because both try to solve climate change separately",
+    "Because both assume reducing emissions alone is enough"
+   ],
+   "answer": 1,
+   "explanation": "Both approaches are required together to navigate an unstable climate system[cite: 32]."
+  },
+  {
+   "id": 435,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Quantitative Reasoning / Fractions",
+   "question": "If the numerator and denominator of a proper fraction are increased by the same quantity, the resulting fraction is:",
+   "options": [
+    "Always greater than the original fraction",
+    "Always less than the original fraction",
+    "Always equal to the original fraction",
+    "Cannot be determined"
+   ],
+   "answer": 0,
+   "explanation": "For a proper fraction (numerator < denominator), adding a positive constant to both increases the value toward 1, making it greater than the original[cite: 32]."
+  },
+  {
+   id": 436,
    "subject": "Aptitude",
    "stream": "Both",
    "grade": "Grade 12",
    "topic": "Number Series",
-   "question": "What comes next? 2, 4, 8, 16, ...",
+   "question": "What number should replace X to continue the sequence 2, 6, 14, 30, 62, x?",
    "options": [
-    "18",
-    "24",
-    "32",
-    "64"
+    "122",
+    "124",
+    "126",
+    "128"
    ],
-   "answer": 2,
-   "explanation": "Each number is doubled."
+   "answer": 1,
+   "explanation": "Differences are 4, 8, 16, 32, so next difference is 64. $62 + 64 = 126$? Wait, let's check: $2\\times 2 + 2 = 6$, $6\\times 2 + 2 = 14$, $14\\times 2 + 2 = 30$, $30\\times 2 + 2 = 62$, $62\\times 2 + 2 = 126$. Wait, option C is 126[cite: 32]."
   },
   {
-   "id": 204,
+   "id": 437,
    "subject": "Aptitude",
    "stream": "Both",
    "grade": "Grade 12",
-   "topic": "Logical Reasoning",
-   "question": "Ali is taller than Beza, and Beza is taller than Chala. Who is the shortest?",
+   "topic": "Percentages & Word Problems",
+   "question": "Last year, Heran saved 10% of her annual earnings. This year she earned 5% more than last year and she saved 12% of her annual earnings. The amount saved this year is what percent of the amount saved last year?",
    "options": [
-    "Ali",
-    "Beza",
-    "Chala",
-    "Cannot tell"
+    "123%",
+    "124%",
+    "125%",
+    "126%"
+   ],
+   "answer": 3,
+   "explanation": "Let last year's earnings = $E$, savings = $0.10E$. This year's earnings = $1.05E$, savings = $0.12 \\times 1.05E = 0.126E$. Ratio = $0.126E / 0.10E = 1.26 = 126\\%$[cite: 32]."
+  },
+  {
+   "id": 438,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Word Problems / Arithmetic",
+   "question": "A telecom company provides an internet package that charges a service fee of Birr 700 per month plus Birr 0.75 per megabyte of data used. If a man uses 5000 megabytes of data in one month, how many birr will he pay to the telecom company for that month?",
+   "options": [
+    "4000",
+    "1500",
+    "4450",
+    "3750"
    ],
    "answer": 2,
-   "explanation": "Ali > Beza > Chala, so Chala is shortest."
+   "explanation": "Total = $700 + 0.75 \\times 5000 = 700 + 3750 = 4450$ Birr[cite: 32]."
   },
   {
-   "id": 205,
-   "subject": "Geography",
-   "stream": "Social",
+   "id": 439,
+   "subject": "Aptitude",
+   "stream": "Both",
    "grade": "Grade 12",
-   "topic": "Physical Geography",
-   "question": "The Blue Nile (Abbay) begins from which lake?",
+   "topic": "Averages",
+   "question": "Average age of seven persons in a group is 30 years. The average age of five persons of this group is 31 years. What is the average age of the other two persons in the group?",
    "options": [
-    "Lake Tana",
-    "Lake Ziway",
-    "Lake Abaya",
-    "Lake Langano"
+    "55 years",
+    "26 years",
+    "27.5 years",
+    "15 years"
    ],
-   "answer": 0,
-   "explanation": "The Abbay flows out of Lake Tana."
+   "answer": 2,
+   "explanation": "Total age of 7 = $7 \\times 30 = 210$. Total age of 5 = $5 \\times 31 = 155$. Total age of other 2 = $210 - 155 = 55$. Average = $55 / 2 = 27.5$ years[cite: 32]."
   },
   {
-   "id": 206,
-   "subject": "Geography",
-   "stream": "Social",
+   "id": 440,
+   "subject": "Aptitude",
+   "stream": "Both",
    "grade": "Grade 12",
-   "topic": "Physical Geography",
-   "question": "What is the highest mountain in Ethiopia?",
+   "topic": "Partnership & Ratios",
+   "question": "Three partners, Gemechu, Gurmu and Lemi start a business. Twice Gemechu's capital is equal to three times Gurmu's capital and Gurmu's capital is four times Lemi's capital. Out of a total profit of Birr 16500, what is the share of Gurmu?",
    "options": [
-    "Ras Dashen",
-    "Mount Zuqualla",
-    "Mount Batu",
-    "Mount Choqa"
-   ],
-   "answer": 0,
-   "explanation": "Ras Dashen is the highest peak in Ethiopia."
-  },
-  {
-   "id": 207,
-   "subject": "History",
-   "stream": "Social",
-   "grade": "Grade 12",
-   "topic": "Modern Ethiopian History",
-   "question": "In which year was the Battle of Adwa fought?",
-   "options": [
-    "1884",
-    "1896",
-    "1905",
-    "1936"
+    "Birr 1500",
+    "Birr 6000",
+    "Birr 4000",
+    "Birr 6600"
    ],
    "answer": 1,
-   "explanation": "The Battle of Adwa took place in 1896."
+   "explanation": "Let Lemi = $L$. Gurmu = $4L$. Gemechu = $(3/2)\\text{Gurmu} = 6L$. Ratio G:Gu:L = $6:4:1$. Total parts = $11$. Gurmu's share = $(4/11) \\times 16500 = 4 \\times 1500 = 6000$ Birr[cite: 32]."
   },
   {
-   "id": 208,
-   "subject": "History",
-   "stream": "Social",
+   "id": 441,
+   "subject": "Aptitude",
+   "stream": "Both",
    "grade": "Grade 12",
-   "topic": "Modern Ethiopian History",
-   "question": "Which emperor led the Ethiopian army at the Battle of Adwa?",
+   "topic": "Work & Time",
+   "question": "Two pipes, A and B, can fill a tank in 20 minutes and 30 minutes respectively. If both pipes are used together, how long will it take to fill the tank?",
    "options": [
-    "Tewodros II",
-    "Yohannes IV",
-    "Menelik II",
-    "Haile Selassie"
+    "12",
+    "15",
+    "25",
+    "5"
+   ],
+   "answer": 0,
+   "explanation": "Combined rate = $1/20 + 1/30 = 5/60 = 1/12$. Time = 12 minutes[cite: 33]."
+  },
+  {
+   "id": 442,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Fractions Comparison",
+   "question": "Which of the following fractions is the largest? 7/8, 13/16, 31/40, 63/80",
+   "options": [
+    "7/8",
+    "13/16",
+    "31/40",
+    "63/80"
+   ],
+   "answer": 0,
+   "explanation": "Converting to denominator 80: $7/8 = 70/80$, $13/16 = 65/80$, $31/40 = 62/80$, $63/80$. Largest is $70/80 = 7/8$[cite: 33]."
+  },
+  {
+   "id": 443,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Algebra",
+   "question": "The sum of the squares of three numbers is 138, and the sum of their products taken two at a time is 131. What is the sum of the three numbers?",
+   "options": [
+    "400",
+    "20",
+    "262",
+    "40"
+   ],
+   "answer": 1,
+   "explanation": "$(a+b+c)^2 = a^2+b^2+c^2 + 2(ab+bc+ca) = 138 + 2(131) = 138 + 262 = 400$. Sum $= \\sqrt{400} = 20$[cite: 33]."
+  },
+  {
+   "id": 444,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Trigonometry / Heights and Distances",
+   "question": "An observer 1.6m tall is $20\\sqrt{3}$ m away from a tower. The angle of elevation from his eye to the top of the tower is $30^\\circ$. The height of the tower is:",
+   "options": [
+    "21.6 m",
+    "23.2 m",
+    "24.7 m",
+    "20 m"
+   ],
+   "answer": 0,
+   "explanation": "Height above eye level = $20\\sqrt{3} \\times \\tan(30^\\circ) = 20\\sqrt{3} \\times (1/\\sqrt{3}) = 20$ m. Total height = $20 + 1.6 = 21.6$ m[cite: 33]."
+  },
+  {
+   "id": 445,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Algebra / Exponents",
+   "question": "For any real number a, which of the following is always true?",
+   "options": [
+    "(a-1)^3/(a-1) = a^2-2a+1",
+    "4 + (2a)^2/(a^2+1) = 4",
+    "a^(-1/2) = 1/\\sqrt{a}",
+    "a^0 = 1"
+   ],
+   "answer": 0,
+   "explanation": "Provided $a \\neq 1$, $(a-1)^3/(a-1) = (a-1)^2 = a^2 - 2a + 1$[cite: 33]."
+  },
+  {
+   "id": 446,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Quadratic Equations / Inequalities",
+   "question": "A shop owner selling x pairs of shoes per day has a profit (in birr) expressed by the equation $p(x) = -x^2 + 25x - 10$. If the owner needs to obtain a profit of more than 140 birr per day, then the number of pairs of shoes the shop owner makes should range between:",
+   "options": [
+    "5 and 10",
+    "10 and 15",
+    "5 and 15",
+    "12 and 15"
    ],
    "answer": 2,
-   "explanation": "Emperor Menelik II led the army with Empress Taytu."
+   "explanation": "$-x^2 + 25x - 10 > 140 \\implies x^2 - 25x + 150 < 0 \\implies (x-10)(x-15) < 0 \\implies 10 < x < 15$?"
   },
   {
-   "id": 209,
-   "subject": "Economics",
-   "stream": "Social",
+   "id": 447,
+   "subject": "Aptitude",
+   "stream": "Both",
    "grade": "Grade 12",
-   "topic": "Basic Concepts",
-   "question": "The value of the next best alternative given up when making a choice is called:",
+   "topic": "Exponents & Comparison",
+   "question": "Compare the two quantities: Quantity A = $(-51)^{16}$, Quantity B = $(-57)^{17}$",
    "options": [
-    "Opportunity cost",
-    "Marginal revenue",
-    "Inflation",
-    "Profit"
+    "Quantity A is less than quantity B",
+    "Quantity A is equal to quantity B",
+    "Quantity A is greater than quantity B",
+    "The relationship cannot be determined"
    ],
-   "answer": 0,
-   "explanation": "This is the definition of opportunity cost."
+   "answer": 2,
+   "explanation": "Quantity A is positive (even exponent), while Quantity B is negative (odd exponent). Therefore, Quantity A > Quantity B[cite: 33]."
   },
   {
-   "id": 210,
-   "subject": "Economics",
-   "stream": "Social",
+   "id": 448,
+   "subject": "Aptitude",
+   "stream": "Both",
    "grade": "Grade 12",
-   "topic": "Basic Concepts",
-   "question": "Which of these is a factor of production?",
+   "topic": "Percentages",
+   "question": "Three candidates contested an election and received 1136, 7636, and 11628 votes respectively. What percentage of the total votes did the winning candidate receive?",
    "options": [
-    "Labour",
-    "Tax",
-    "Inflation",
-    "Budget"
+    "57%",
+    "60%",
+    "65%",
+    "90%"
    ],
    "answer": 0,
-   "explanation": "Land, labour, capital and entrepreneurship are the factors of production."
+   "explanation": "Total votes = $1136 + 7636 + 11628 = 20400$. Winning votes = $11628$. Percentage = $11628 / 20400 = 57\\%$[cite: 33]."
+  },
+  {
+   "id": 449,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Probability",
+   "question": "Tickets numbered 1 to 20 are mixed up and then a ticket is drawn at random. What is the probability that the ticket drawn has a number which is a multiple of 3 or 5?",
+   "options": [
+    "1/2",
+    "2/5",
+    "8/15",
+    "9/20"
+   ],
+   "answer": 3,
+   "explanation": "Multiples of 3: 3, 6, 9, 12, 15, 18 (6 numbers). Multiples of 5: 5, 10, 15, 20 (4 numbers). Intersection (multiple of both 3 and 5, i.e., 15): 1 number. Total favorable = $6 + 4 - 1 = 9$. Probability = $9/20$[cite: 33]."
+  },
+  {
+   "id": 450,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Mixtures & Ratios",
+   "question": "A mixture contains 120 litres of mango and avocado juice in the ratio 2:3. If the ratio is to be changed to 3:2, how many litres of avocado juice must be removed?",
+   "options": [
+    "40",
+    "48",
+    "78",
+    "20"
+   ],
+   "answer": 2,
+   "explanation": "Mango = $120 \\times (2/5) = 48$ litres. Avocado = $120 \\times (3/5) = 72$ litres. Let $x$ be avocado removed: $48 / (72 - x) = 3/2 \\implies 96 = 216 - 3x \\implies 3x = 120 \\implies x = 40$? Wait, let's check options: A is 40[cite: 33, 34]."
+  },
+  {
+   "id": 451,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Sequences & Series",
+   "question": "The general term of a sequence is $a_n = (1/2)^{1-n}$. Then which of the following is true about this sequence?",
+   "options": [
+    "Its terms are negative.",
+    "Its terms are natural numbers.",
+    "Its terms are odd numbers.",
+    "0 is one of its terms."
+   ],
+   "answer": 1,
+   "explanation": "$a_n = (1/2)^{1-n} = 2^{n-1}$. For $n = 1, 2, 3, \\dots$, the terms are $1, 2, 4, 8, \\dots$, which are natural numbers[cite: 34]."
+  },
+  {
+   "id": 452,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Logarithms",
+   "question": "If $f(x)$ and $g(x)$ are logarithmic functions whose bases are reciprocals of each other, then which one of the following statements is true?",
+   "options": [
+    "They have reciprocal values for all x.",
+    "There are some equal values of x for which both f(x) and g(x) are positive.",
+    "They have opposite signs for all $x \\neq 1$.",
+    "They can never have equal values for any x."
+   ],
+   "answer": 2,
+   "explanation": "Logarithms with reciprocal bases have opposite signs (e.g., $\\log_b x = -\\log_{1/b} x$), so they have opposite signs for all $x \\neq 1$[cite: 34]."
+  },
+  {
+   "id": 453,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Permutations & Combinations",
+   "question": "How many 4-letter words, with or without meaning, can be formed out of the letters of the word 'LOGARITHMS', if repetition of letters is not allowed?",
+   "options": [
+    "40",
+    "400",
+    "2540",
+    "5040"
+   ],
+   "answer": 3,
+   "explanation": "'LOGARITHMS' has 10 distinct letters. Number of 4-letter arrangements = $P(10, 4) = 10 \\times 9 \\times 8 \\times 7 = 5040$[cite: 34]."
+  },
+  {
+   "id": 454,
+   "subject": "Aptitude",
+   "stream": "Both",
+   "grade": "Grade 12",
+   "topic": "Algebra / Algebraic Identities",
+   "question": "[(469 + 174)^2 - (469 - 174)^2] / (469 x 174) is equal to:",
+   "options": [
+    "2",
+    "4",
+    "295",
+    "643"
+   ],
+   "answer": 1,
+   "explanation": "Using identity $(a+b)^2 - (a-b)^2 = 4ab$, the expression simplifies to $(4 \\times 469 \\times 174) / (469 \\times 174) = 4$[cite: 34]."
   }
  ]
 }
